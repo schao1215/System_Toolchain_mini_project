@@ -4,9 +4,9 @@ Detecting faults in the Tennessee Eastman Process without any labelled fault exa
 
 這個專案在沒有故障標籤的情況下，偵測 Tennessee Eastman Process（TEP）的故障。兩個偵測器都只用正常運轉的資料訓練，再拿去對二十種故障打分。
 
-Course handout: [`assignment.md`](assignment.md). A walkthrough of the task and the grading rules is in [`assignment-explained.md`](assignment-explained.md).
+Course handout: [`assignment.md`](assignment.md). A walkthrough of the task and the grading rules is in [`assignment-explained.md`](assignment-explained.md). Short answers to the design questions are in [`FAQ.md`](FAQ.md).
 
-作業原文在 [`assignment.md`](assignment.md)。任務內容、要交的檔案和評分邏輯的中文說明在 [`assignment-explained.md`](assignment-explained.md)。
+作業原文在 [`assignment.md`](assignment.md)。任務內容、要交的檔案和評分邏輯的中文說明在 [`assignment-explained.md`](assignment-explained.md)。設計問題的簡答在 [`FAQ.md`](FAQ.md)。
 
 ## English
 
@@ -29,13 +29,23 @@ A sample is in alarm only when it and the two samples before it all exceed the t
 
 ### The two detectors
 
-**PCA.** Standardize the training runs, then keep the smallest number of principal components whose eigenvalues sum to at least 90% of the total. On this data that cutoff is **k = 31** (about 90.2% of the training variance). For a standardized row `z` and loadings `P`:
+**PCA.** Standardize the training runs, then keep the smallest number of principal components whose eigenvalues sum to at least 90% of the total. On this data that cutoff is **k = 31** (about 90.2% of the training variance). For a standardized row $z$ and loadings $P$:
 
-- `t = P.T @ z`
-- `T2 = sum(t_i^2 / lambda_i)` over the retained components. Large when the plant still moves in its usual directions, but by an unusual amount.
-- `SPE = ||z - P P.T z||^2`. Large when the channels stop moving together.
+$$
+t = P^{\top} z, \qquad
+T^{2} = \sum_{i=1}^{k} \frac{t_{i}^{2}}{\lambda_{i}}, \qquad
+\mathrm{SPE} = \lVert z - P P^{\top} z \rVert^{2}.
+$$
 
-**Ridge forecast residual.** Inside each run, predict the standardized row at time `t` from the rows at `t-1` and `t-2` (104 features, 52 targets). One `Ridge(alpha=1.0)` is fit on the training runs. Each residual is divided by that channel's training residual standard deviation (`ddof=1`), squared, and summed. The first two samples of every run have no score, because `t-2` does not exist.
+$T^{2}$ is large when the plant still moves in its usual directions, but by an unusual amount. SPE is large when the channels stop moving together.
+
+**Ridge forecast residual.** Inside each run, predict the standardized row at time $t$ from the rows at $t-1$ and $t-2$ (104 features, 52 targets). One `Ridge(alpha=1.0)` is fit on the training runs. Each residual is divided by that channel's training residual standard deviation $s_{j}$ (`ddof=1`), squared, and summed:
+
+$$
+\mathrm{score}_{t} = \sum_{j=1}^{52} \left( \frac{z_{t,j} - \hat{z}_{t,j}}{s_{j}} \right)^{2}.
+$$
+
+The first two samples of every run have no score, because $t-2$ does not exist.
 
 ### Results worth knowing before you read the report
 
@@ -130,13 +140,23 @@ The course asks for two Canvas uploads: `REPORT.pdf`, and `miniproject-evidence.
 
 ### 兩個偵測器
 
-**PCA。** 先用訓練 run 做標準化，再保留最少的主成分，使特徵值加總至少佔總變異的 90%。這份資料上的結果是 **k = 31**（約 90.2%）。對標準化後的一列 `z`、負荷矩陣 `P`：
+**PCA。** 先用訓練 run 做標準化，再保留最少的主成分，使特徵值加總至少佔總變異的 90%。這份資料上的結果是 **k = 31**（約 90.2%）。對標準化後的一列 $z$、負荷矩陣 $P$：
 
-- `t = P.T @ z`
-- `T2` 是保留成分上 `t_i^2 / lambda_i` 的和。工廠仍沿著平常的方向在動，只是幅度異常時，T2 會變大。
-- `SPE = ||z - P P.T z||^2`。通道不再照平常的方式一起動、保留成分重建不回來時，SPE 會變大。
+$$
+t = P^{\top} z, \qquad
+T^{2} = \sum_{i=1}^{k} \frac{t_{i}^{2}}{\lambda_{i}}, \qquad
+\mathrm{SPE} = \lVert z - P P^{\top} z \rVert^{2}.
+$$
 
-**Ridge 預測殘差。** 在每個 run 裡面，用 `t-1` 和 `t-2` 的標準化列（104 欄）預測 `t` 的標準化列（52 欄）。訓練 run 上只擬合一個 `Ridge(alpha=1.0)`。每個通道的殘差先除以該通道在訓練集上的殘差標準差（`ddof=1`），再平方、對 52 個通道加總。每個 run 的前兩個 sample 沒有分數，因為 `t-2` 不存在。
+工廠仍沿著平常的方向在動、只是幅度異常時，$T^{2}$ 會變大。通道不再照平常的方式一起動、保留成分重建不回來時，SPE 會變大。
+
+**Ridge 預測殘差。** 在每個 run 裡面，用 $t-1$ 和 $t-2$ 的標準化列（104 欄）預測 $t$ 的標準化列（52 欄）。訓練 run 上只擬合一個 `Ridge(alpha=1.0)`。每個通道的殘差先除以該通道在訓練集上的殘差標準差 $s_{j}$（`ddof=1`），再平方、對 52 個通道加總：
+
+$$
+\mathrm{score}_{t} = \sum_{j=1}^{52} \left( \frac{z_{t,j} - \hat{z}_{t,j}}{s_{j}} \right)^{2}.
+$$
+
+每個 run 的前兩個 sample 沒有分數，因為 $t-2$ 不存在。
 
 ### 看報告之前可以先知道的結果
 
