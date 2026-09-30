@@ -28,7 +28,7 @@ The 52 channels do not move independently. A few underlying drivers (feeds, recy
 $k$ is not tuned to the faults. It is the smallest number of components whose eigenvalues add up to at least 90% of the total:
 
 $$
-k = \min\left\{ m : \frac{\sum_{i=1}^{m} \lambda_i}{\sum_{i=1}^{52} \lambda_i} \ge 0.90 \right\}.
+k = \min\left\lbrace m : \frac{\sum_{i=1}^{m} \lambda_i}{\sum_{i=1}^{52} \lambda_i} \ge 0.90 \right\rbrace.
 $$
 
 In code this is the cumulative sum of `explained_variance_ratio_` after `PCA(svd_solver="full")` on the standardized training matrix. The search keeps a component that lands exactly on 90%. On this data, $k = 31$, and those 31 components carry about 90.2% of the training variance. The other 21 directions are the residual that SPE watches.
@@ -121,7 +121,7 @@ Fault 3 is a step in D-feed temperature, fault 9 is random variation of that sam
 $k$ 不是對著故障調出來的。它是特徵值加總至少佔總變異 90% 的最少成分數：
 
 $$
-k = \min\left\{ m : \frac{\sum_{i=1}^{m} \lambda_i}{\sum_{i=1}^{52} \lambda_i} \ge 0.90 \right\}.
+k = \min\left\lbrace m : \frac{\sum_{i=1}^{m} \lambda_i}{\sum_{i=1}^{52} \lambda_i} \ge 0.90 \right\rbrace.
 $$
 
 程式裡是對標準化訓練矩陣做 `PCA(svd_solver="full")`，再對 `explained_variance_ratio_` 做累加。剛好落在 90% 的那個成分也會被留下。這份資料上 $k = 31$，這 31 個成分大約帶著訓練變異的 90.2%。剩下的 21 個方向就是 SPE 在看的殘差。
