@@ -48,7 +48,7 @@ TEAM = [
         "code": "ridge_monitor.py (lag_design, fit_ridge, score_ridge)",
     },
     {
-        "name": "Mark",
+        "name": "Mark Tan",
         "andrew": "marktan",
         "role": "Part 3, evaluation and submission (thresholds, alarms, detection table)",
         "code": (

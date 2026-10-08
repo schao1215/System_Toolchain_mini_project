@@ -3,7 +3,7 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Count 15 /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R 29 0 R 31 0 R 33 0 R] >>
+<< /Type /Pages /Count 18 /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R 29 0 R 31 0 R 33 0 R 35 0 R 37 0 R 39 0 R] >>
 endobj
 3 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
@@ -25,7 +25,7 @@ T*
 /F1 8 Tf
 (team banana_bread_matcha_latte: marktan, mingyaox, hsuanlec, xinranl3) Tj
 T*
-(generated 2026-10-08 15:28 EDT on macOS-26.6.2-arm64-arm-64bit, polars 2.0.0, numpy 2.5.3) Tj
+(generated 2026-10-08 15:35 EDT on macOS-26.6.2-arm64-arm-64bit, polars 2.0.0, numpy 2.5.3) Tj
 T*
 (project System_Toolchain_mini_project) Tj
 T*
@@ -289,7 +289,7 @@ T*
 (    ridge: 2 lags of 52 channels, alpha 1.0) Tj
 T*
 ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 1 of 15) Tj ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 1 of 18) Tj ET
 endstream
 endobj
 7 0 obj
@@ -445,14 +445,14 @@ T*
 (    ???????????????????????????????????????????) Tj
 T*
 ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 2 of 15) Tj ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 2 of 18) Tj ET
 endstream
 endobj
 9 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 10 0 R >>
 endobj
 10 0 obj
-<< /Length 6293 >>
+<< /Length 4959 >>
 stream
 BT /F1 8 Tf 42 748 Td 10.2 TL
 0.40 0.40 0.40 rg
@@ -491,516 +491,6 @@ T*
 T*
 /F2 8 Tf
 0.00 0.00 0.00 rg
-(Code: .venv.nosync/bin/activate_this.py) Tj
-T*
-T*
-/F1 8 Tf
-(  ) Tj
-0.35 0.48 0.38 rg
-(# Copyright \(c\) 2020-202x The virtualenv developers) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(#) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# Permission is hereby granted, free of charge, to any person obtaining) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# a copy of this software and associated documentation files \(the) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# "Software"\), to deal in the Software without restriction, including) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# without limitation the rights to use, copy, modify, merge, publish,) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# distribute, sublicense, and/or sell copies of the Software, and to) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# permit persons to whom the Software is furnished to do so, subject to) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# the following conditions:) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(#) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# The above copyright notice and this permission notice shall be) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# included in all copies or substantial portions of the Software.) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(#) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-T*
-(  ) Tj
-0.62 0.20 0.12 rg
-(""") Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.62 0.20 0.12 rg
-(Activate virtualenv for current interpreter:) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-T*
-(  ) Tj
-0.62 0.20 0.12 rg
-(import runpy) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.62 0.20 0.12 rg
-(runpy.run_path\(this_file\)) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-T*
-(  ) Tj
-0.62 0.20 0.12 rg
-(This can be used when you must use an existing Python interpreter, not the virtualenv bin/python.) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-0.62 0.20 0.12 rg
-(""") Tj
-0.00 0.00 0.00 rg
-(  ) Tj
-0.35 0.48 0.38 rg
-(# noqa: D415) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-T*
-(  ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(from) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-( ) Tj
-(__future__) Tj
-( ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(import) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-( ) Tj
-(annotations) Tj
-T*
-(  ) Tj
-T*
-(  ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(import) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-( ) Tj
-(os) Tj
-T*
-(  ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(import) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-( ) Tj
-(site) Tj
-T*
-(  ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(import) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-( ) Tj
-(sys) Tj
-T*
-(  ) Tj
-T*
-(  ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(try) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-(:) Tj
-T*
-(  ) Tj
-(    ) Tj
-(abs_file) Tj
-( = ) Tj
-(os) Tj
-(.) Tj
-(path) Tj
-(.) Tj
-(abspath) Tj
-(\() Tj
-(__file__) Tj
-(\)) Tj
-T*
-(  ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(except) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-( ) Tj
-(NameError) Tj
-( ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(as) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-( ) Tj
-(exc) Tj
-(:) Tj
-T*
-(  ) Tj
-(    ) Tj
-(msg) Tj
-( = ) Tj
-0.62 0.20 0.12 rg
-("You must use import runpy; runpy.run_path\(this_file\)") Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-(    ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(raise) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-( ) Tj
-(AssertionError) Tj
-(\() Tj
-(msg) Tj
-(\) ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(from) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-( ) Tj
-(exc) Tj
-T*
-(  ) Tj
-T*
-(  ) Tj
-(bin_dir) Tj
-( = ) Tj
-(os) Tj
-(.) Tj
-(path) Tj
-(.) Tj
-(dirname) Tj
-(\() Tj
-(abs_file) Tj
-(\)) Tj
-T*
-(  ) Tj
-(base) Tj
-( = ) Tj
-(bin_dir) Tj
-([: -) Tj
-(len) Tj
-(\() Tj
-0.62 0.20 0.12 rg
-("bin") Tj
-0.00 0.00 0.00 rg
-(\) - ) Tj
-0.05 0.40 0.50 rg
-(1) Tj
-0.00 0.00 0.00 rg
-(]  ) Tj
-0.35 0.48 0.38 rg
-(# strip away the bin part from the __file__, plus the path separator) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-T*
-(  ) Tj
-0.35 0.48 0.38 rg
-(# prepend bin to PATH \(this file is inside the bin directory\)) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-(os) Tj
-(.) Tj
-(environ) Tj
-([) Tj
-0.62 0.20 0.12 rg
-("PATH") Tj
-0.00 0.00 0.00 rg
-(] = ) Tj
-(os) Tj
-(.) Tj
-(pathsep) Tj
-(.) Tj
-(join) Tj
-(\([) Tj
-(bin_dir) Tj
-(, *) Tj
-(os) Tj
-(.) Tj
-(environ) Tj
-(.) Tj
-(get) Tj
-(\() Tj
-0.62 0.20 0.12 rg
-("PATH") Tj
-0.00 0.00 0.00 rg
-(, ) Tj
-0.62 0.20 0.12 rg
-("") Tj
-0.00 0.00 0.00 rg
-(\).) Tj
-(split) Tj
-(\() Tj
-(os) Tj
-(.) Tj
-(pathsep) Tj
-(\)]\)) Tj
-T*
-(  ) Tj
-(os) Tj
-(.) Tj
-(environ) Tj
-([) Tj
-0.62 0.20 0.12 rg
-("VIRTUAL_ENV") Tj
-0.00 0.00 0.00 rg
-(] = ) Tj
-(base) Tj
-(  ) Tj
-0.35 0.48 0.38 rg
-(# virtual env is right above bin directory) Tj
-T*
-ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 3 of 15) Tj ET
-endstream
-endobj
-11 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 12 0 R >>
-endobj
-12 0 obj
-<< /Length 5972 >>
-stream
-BT /F1 8 Tf 42 748 Td 10.2 TL
-(  ) Tj
-(os) Tj
-(.) Tj
-(environ) Tj
-([) Tj
-0.62 0.20 0.12 rg
-("VIRTUAL_ENV_PROMPT") Tj
-0.00 0.00 0.00 rg
-(] = ) Tj
-0.62 0.20 0.12 rg
-("miniproject") Tj
-0.00 0.00 0.00 rg
-( ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(or) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-( ) Tj
-(os) Tj
-(.) Tj
-(path) Tj
-(.) Tj
-(basename) Tj
-(\() Tj
-(base) Tj
-(\)  ) Tj
-0.35 0.48 0.38 rg
-(# noqa: SIM222) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-T*
-(  ) Tj
-0.35 0.48 0.38 rg
-(# add the virtual environments libraries to the host python import mechanism) Tj
-T*
-0.00 0.00 0.00 rg
-(  ) Tj
-(prev_length) Tj
-( = ) Tj
-(len) Tj
-(\() Tj
-(sys) Tj
-(.) Tj
-(path) Tj
-(\)) Tj
-T*
-(  ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(for) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-( ) Tj
-(lib) Tj
-( ) Tj
-/F2 8 Tf
-0.45 0.15 0.55 rg
-(in) Tj
-/F1 8 Tf
-0.00 0.00 0.00 rg
-( ) Tj
-0.62 0.20 0.12 rg
-("../lib/python3.12/site-packages") Tj
-0.00 0.00 0.00 rg
-(.) Tj
-(split) Tj
-(\() Tj
-(os) Tj
-(.) Tj
-(pathsep) Tj
-(\):) Tj
-T*
-(  ) Tj
-(    ) Tj
-(path) Tj
-( = ) Tj
-(os) Tj
-(.) Tj
-(path) Tj
-(.) Tj
-(realpath) Tj
-(\() Tj
-(os) Tj
-(.) Tj
-(path) Tj
-(.) Tj
-(join) Tj
-(\() Tj
-(bin_dir) Tj
-(, ) Tj
-(lib) Tj
-(\)\)) Tj
-T*
-(  ) Tj
-(    ) Tj
-(site) Tj
-(.) Tj
-(addsitedir) Tj
-(\() Tj
-(path) Tj
-(\)) Tj
-T*
-(  ) Tj
-(sys) Tj
-(.) Tj
-(path) Tj
-([:] = ) Tj
-(sys) Tj
-(.) Tj
-(path) Tj
-([) Tj
-(prev_length) Tj
-(:] + ) Tj
-(sys) Tj
-(.) Tj
-(path) Tj
-([) Tj
-0.05 0.40 0.50 rg
-(0) Tj
-0.00 0.00 0.00 rg
-(:) Tj
-(prev_length) Tj
-(]) Tj
-T*
-(  ) Tj
-T*
-(  ) Tj
-(sys) Tj
-(.) Tj
-(real_prefix) Tj
-( = ) Tj
-(sys) Tj
-(.) Tj
-(prefix) Tj
-T*
-(  ) Tj
-(sys) Tj
-(.) Tj
-(prefix) Tj
-( = ) Tj
-(base) Tj
-T*
-T*
-/F2 8 Tf
 (Code: src/miniproject/__init__.py) Tj
 T*
 T*
@@ -1268,7 +758,17 @@ T*
 0.35 0.48 0.38 rg
 (# samples 1 to 20 are normal and samples 21 onward are faulty.") Tj
 T*
-0.00 0.00 0.00 rg
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 3 of 18) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 12 0 R >>
+endobj
+12 0 obj
+<< /Length 8389 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (FAULT_START_SAMPLE) Tj
 ( = ) Tj
@@ -1298,17 +798,6 @@ T*
 0.00 0.00 0.00 rg
 (  ) Tj
 T*
-ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 4 of 15) Tj ET
-endstream
-endobj
-13 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 14 0 R >>
-endobj
-14 0 obj
-<< /Length 8794 >>
-stream
-BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (TRAIN_RUNS) Tj
 ( = ) Tj
@@ -1884,6 +1373,17 @@ T*
 0.00 0.00 0.00 rg
 (,) Tj
 T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 4 of 18) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 14 0 R >>
+endobj
+14 0 obj
+<< /Length 10819 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (    ) Tj
 0.62 0.20 0.12 rg
@@ -1939,17 +1439,6 @@ T*
 0.00 0.00 0.00 rg
 (,) Tj
 T*
-ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 5 of 15) Tj ET
-endstream
-endobj
-15 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 16 0 R >>
-endobj
-16 0 obj
-<< /Length 11520 >>
-stream
-BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (    ) Tj
 0.62 0.20 0.12 rg
@@ -2644,6 +2133,17 @@ T*
 0.00 0.00 0.00 rg
 (},) Tj
 T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 5 of 18) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 16 0 R >>
+endobj
+16 0 obj
+<< /Length 7177 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (    ) Tj
 0.05 0.40 0.50 rg
@@ -2755,17 +2255,6 @@ T*
 0.00 0.00 0.00 rg
 (},) Tj
 T*
-ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 6 of 15) Tj ET
-endstream
-endobj
-17 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 18 0 R >>
-endobj
-18 0 obj
-<< /Length 6541 >>
-stream
-BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (    ) Tj
 0.05 0.40 0.50 rg
@@ -3224,6 +2713,17 @@ T*
 (FileNotFoundError) Tj
 (\() Tj
 T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 6 of 18) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 18 0 R >>
+endobj
+18 0 obj
+<< /Length 9538 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (            ) Tj
 (f) Tj
@@ -3297,17 +2797,6 @@ T*
 0.00 0.00 0.00 rg
 (\):) Tj
 T*
-ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 7 of 15) Tj ET
-endstream
-endobj
-19 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 20 0 R >>
-endobj
-20 0 obj
-<< /Length 9413 >>
-stream
-BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (            ) Tj
 /F2 8 Tf
@@ -4047,6 +3536,17 @@ T*
 (channels) Tj
 (\)) Tj
 T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 7 of 18) Tj ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 20 0 R >>
+endobj
+20 0 obj
+<< /Length 9095 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (    ) Tj
 (_require_channels) Tj
@@ -4115,17 +3615,6 @@ T*
 0.00 0.00 0.00 rg
 (\)\)\):) Tj
 T*
-ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 8 of 15) Tj ET
-endstream
-endobj
-21 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 22 0 R >>
-endobj
-22 0 obj
-<< /Length 8694 >>
-stream
-BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (        ) Tj
 /F2 8 Tf
@@ -4835,52 +4324,52 @@ T*
 (mean) Tj
 (,) Tj
 T*
-(  ) Tj
-(        ) Tj
-(std) Tj
-(=) Tj
-(std) Tj
-(,) Tj
-T*
-(  ) Tj
-(        ) Tj
-(train_z) Tj
-(=) Tj
-(train_z) Tj
-(,) Tj
-T*
-(  ) Tj
-(        ) Tj
-(train_meta) Tj
-(=) Tj
-(train_meta) Tj
-(,) Tj
-T*
-(  ) Tj
-(        ) Tj
-(score_z) Tj
-(=) Tj
-(score_z) Tj
-(,) Tj
-T*
-(  ) Tj
-(        ) Tj
-(score_meta) Tj
-(=) Tj
-(score_meta) Tj
-(,) Tj
-T*
 ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 9 of 15) Tj ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 8 of 18) Tj ET
 endstream
 endobj
-23 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 24 0 R >>
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 22 0 R >>
 endobj
-24 0 obj
-<< /Length 6056 >>
+22 0 obj
+<< /Length 5644 >>
 stream
 BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(        ) Tj
+(std) Tj
+(=) Tj
+(std) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(train_z) Tj
+(=) Tj
+(train_z) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(train_meta) Tj
+(=) Tj
+(train_meta) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(score_z) Tj
+(=) Tj
+(score_z) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(score_meta) Tj
+(=) Tj
+(score_meta) Tj
+(,) Tj
+T*
 (  ) Tj
 (    \)) Tj
 T*
@@ -5320,6 +4809,17 @@ T*
 (str) Tj
 (],) Tj
 T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 9 of 18) Tj ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 24 0 R >>
+endobj
+24 0 obj
+<< /Length 8281 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (\) -> ) Tj
 (pd) Tj
@@ -5374,17 +4874,6 @@ T*
 (copy) Tj
 (\(\)) Tj
 T*
-ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 10 of 15) Tj ET
-endstream
-endobj
-25 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 26 0 R >>
-endobj
-26 0 obj
-<< /Length 7970 >>
-stream
-BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (    ) Tj
 (frame) Tj
@@ -6018,6 +5507,17 @@ T*
 0.00 0.00 0.00 rg
 (  ) Tj
 T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 10 of 18) Tj ET
+endstream
+endobj
+25 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 26 0 R >>
+endobj
+26 0 obj
+<< /Length 7813 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 0.62 0.20 0.12 rg
 (    "A sample is in alarm when it and the two samples before it all exceed) Tj
@@ -6039,17 +5539,7 @@ T*
 0.62 0.20 0.12 rg
 (    reported as fault 0") Tj
 T*
-ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 11 of 15) Tj ET
-endstream
-endobj
-27 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 28 0 R >>
-endobj
-28 0 obj
-<< /Length 8198 >>
-stream
-BT /F1 8 Tf 42 748 Td 10.2 TL
+0.00 0.00 0.00 rg
 (  ) Tj
 T*
 (  ) Tj
@@ -6649,7 +6139,17 @@ T*
 0.62 0.20 0.12 rg
 (    """) Tj
 T*
-0.00 0.00 0.00 rg
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 11 of 18) Tj ET
+endstream
+endobj
+27 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 28 0 R >>
+endobj
+28 0 obj
+<< /Length 8906 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (    ) Tj
 (validation) Tj
@@ -6718,17 +6218,6 @@ T*
 0.00 0.00 0.00 rg
 (\)) Tj
 T*
-ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 12 of 15) Tj ET
-endstream
-endobj
-29 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 30 0 R >>
-endobj
-30 0 obj
-<< /Length 8690 >>
-stream
-BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 (    ) Tj
 /F2 8 Tf
@@ -7406,6 +6895,17 @@ T*
 T*
 (  ) Tj
 T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 12 of 18) Tj ET
+endstream
+endobj
+29 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 30 0 R >>
+endobj
+30 0 obj
+<< /Length 7243 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 /F2 8 Tf
 0.45 0.15 0.55 rg
@@ -7460,17 +6960,7 @@ T*
 0.62 0.20 0.12 rg
 ("""Thresholds, the detection table, and alarmed frames for diagnosis.""") Tj
 T*
-ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 13 of 15) Tj ET
-endstream
-endobj
-31 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 32 0 R >>
-endobj
-32 0 obj
-<< /Length 7178 >>
-stream
-BT /F1 8 Tf 42 748 Td 10.2 TL
+0.00 0.00 0.00 rg
 (  ) Tj
 (    ) Tj
 (specs) Tj
@@ -7964,7 +7454,17 @@ T*
 0.62 0.20 0.12 rg
 (    train_z must already be standardized with the training mean and std.) Tj
 T*
-0.00 0.00 0.00 rg
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 13 of 18) Tj ET
+endstream
+endobj
+31 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 32 0 R >>
+endobj
+32 0 obj
+<< /Length 8408 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
 (  ) Tj
 0.62 0.20 0.12 rg
 (    Its column mean is then zero, so a second centering inside PCA does not) Tj
@@ -7989,17 +7489,7 @@ T*
 0.62 0.20 0.12 rg
 (    """) Tj
 T*
-ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 14 of 15) Tj ET
-endstream
-endobj
-33 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 34 0 R >>
-endobj
-34 0 obj
-<< /Length 7976 >>
-stream
-BT /F1 8 Tf 42 748 Td 10.2 TL
+0.00 0.00 0.00 rg
 (  ) Tj
 (    ) Tj
 /F2 8 Tf
@@ -8623,6 +8113,2352 @@ T*
 T*
 T*
 /F2 8 Tf
+(Code: src/miniproject/pipeline.py) Tj
+T*
+T*
+/F1 8 Tf
+(  ) Tj
+0.62 0.20 0.12 rg
+("""Run the whole project except the evidence script.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(The recipe, in order:) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 14 of 18) Tj ET
+endstream
+endobj
+33 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 34 0 R >>
+endobj
+34 0 obj
+<< /Length 8809 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+0.62 0.20 0.12 rg
+(    1. Check SHA256 of the files in data/.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    2. Standardize with the training mean and std \(ddof=1\) from fault-free runs 1-300.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    3. Score every validation, test, and faulty row.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    4. Set each threshold with numpy.quantile\(validation scores, 0.99\).) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    5. Alarm only when a sample and the two samples before it all exceed the threshold.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    6. Write the detection table, the contribution table, the figure, and REPORT.pdf.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(Quoted outputs:) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    results/scores_pca.parquet) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    results/scores_ridge.parquet) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    results/thresholds.csv) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    results/detection.csv) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    results/contributions.csv) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    REPORT.pdf) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(__future__) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(annotations) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(numpy) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pandas) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pd) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(config) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RESULTS_DIR) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(data) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(load_plant) Tj
+(, ) Tj
+(verify_checksums) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(diagnose) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ridge_contribution_table) Tj
+(, ) Tj
+(spe_contribution_table) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(evaluate) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( \() Tj
+T*
+(  ) Tj
+(    ) Tj
+(alarm_mask) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(build_thresholds_and_detection) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(validation_threshold) Tj
+(,) Tj
+T*
+(  ) Tj
+(\)) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(pca_monitor) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(fit_pca) Tj
+(, ) Tj
+(reconstruction) Tj
+(, ) Tj
+(score_pca) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(plots) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(plot_fault_run) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(report) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pick_plot_fault) Tj
+(, ) Tj
+(write_report) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(ridge_monitor) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(fit_ridge) Tj
+(, ) Tj
+(score_ridge) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_check_alarm_rule) Tj
+(\(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""The three-sample rule, including a missing sample that must not alarm.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(dense) Tj
+( = ) Tj
+(alarm_mask) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(np) Tj
+(.) Tj
+(array) Tj
+(\([) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(3) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(4) Tj
+0.00 0.00 0.00 rg
+(]\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+(np) Tj
+(.) Tj
+(array) Tj
+(\([) Tj
+0.05 0.40 0.50 rg
+(5.0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(5.0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(5.0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(0.0) Tj
+0.00 0.00 0.00 rg
+(]\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+0.05 0.40 0.50 rg
+(1.0) Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(dense) Tj
+(.) Tj
+(tolist) Tj
+(\(\) != [) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(]:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Alarm rule failed on a complete run.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# Sample 2 is absent, so sample 4 does not have two preceding scores.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(sparse) Tj
+( = ) Tj
+(alarm_mask) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(np) Tj
+(.) Tj
+(array) Tj
+(\([) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(3) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(4) Tj
+0.00 0.00 0.00 rg
+(]\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+(np) Tj
+(.) Tj
+(array) Tj
+(\([) Tj
+0.05 0.40 0.50 rg
+(5.0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(5.0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(5.0) Tj
+0.00 0.00 0.00 rg
+(]\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+0.05 0.40 0.50 rg
+(1.0) Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(sparse) Tj
+(.) Tj
+(tolist) Tj
+(\(\) != [) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(]:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Alarm rule crossed a missing sample.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_write_csv) Tj
+(\() Tj
+(frame) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(path) Tj
+(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Enough digits that a later read-back matches the in-memory floats.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(frame) Tj
+(.) Tj
+(to_csv) Tj
+(\() Tj
+(path) Tj
+(, ) Tj
+(index) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+(float_format) Tj
+(=) Tj
+0.62 0.20 0.12 rg
+("%.17g") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_cast_keys) Tj
+(\() Tj
+(frame) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(\) -> ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+(out) Tj
+( = ) Tj
+(frame) Tj
+(.) Tj
+(copy) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(column) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( \() Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+(out) Tj
+([) Tj
+(column) Tj
+(] = ) Tj
+(out) Tj
+([) Tj
+(column) Tj
+(].) Tj
+(astype) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("int64") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(out) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 15 of 18) Tj ET
+endstream
+endobj
+35 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 36 0 R >>
+endobj
+36 0 obj
+<< /Length 10111 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_assert_score_rows) Tj
+(\() Tj
+(pca_scores) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(ridge_scores) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Every required row scored, and no others.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(len) Tj
+(\() Tj
+(pca_scores) Tj
+(\) != 300) Tj
+(_000) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("PCA score file has {len\(pca_scores\)} rows, expected 300000.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# Each of 600 scored runs drops its first two samples.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(len) Tj
+(\() Tj
+(ridge_scores) Tj
+(\) != 298) Tj
+(_800) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("Ridge score file has {len\(ridge_scores\)} rows, expected 298800.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(free) Tj
+( = ) Tj
+(pca_scores) Tj
+([) Tj
+(pca_scores) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(] == ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(int) Tj
+(\() Tj
+(free) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(min) Tj
+(\(\)\) != ) Tj
+0.05 0.40 0.50 rg
+(301) Tj
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(or) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(int) Tj
+(\() Tj
+(free) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(max) Tj
+(\(\)\) != ) Tj
+0.05 0.40 0.50 rg
+(500) Tj
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Fault-free PCA scores are not runs 301 to 500.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(set) Tj
+(\() Tj
+(ridge_scores) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(unique) Tj
+(\(\)\).) Tj
+(issuperset) Tj
+(\({) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+0.00 0.00 0.00 rg
+(}\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Ridge scores include sample 1 or 2, which have no t-2.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(frame) Tj
+(, ) Tj
+(name) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( \(\() Tj
+(pca_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("PCA") Tj
+0.00 0.00 0.00 rg
+(\), \() Tj
+(ridge_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("ridge") Tj
+0.00 0.00 0.00 rg
+(\)\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(frame) Tj
+(.) Tj
+(duplicated) Tj
+(\([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(]\).) Tj
+(any) Tj
+(\(\):) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("{name} scores have duplicate keys.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_assert_tables_match_scores) Tj
+(\() Tj
+T*
+(  ) Tj
+(    ) Tj
+(pca_scores) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_scores) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(thresholds) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(detection) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Recompute the 99th percentiles from the score frames about to be saved.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    The evaluation check does this from the team's own scores, so a threshold) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    that is not that percentile would fail even when the detector is right.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(expected) Tj
+( = {) Tj
+T*
+(  ) Tj
+(        ) Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(validation_threshold) Tj
+(\() Tj
+(pca_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(validation_threshold) Tj
+(\() Tj
+(pca_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+0.62 0.20 0.12 rg
+("ridge") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(validation_threshold) Tj
+(\() Tj
+(ridge_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("score") Tj
+0.00 0.00 0.00 rg
+(\),) Tj
+T*
+(  ) Tj
+(    }) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_) Tj
+(, ) Tj
+(row) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(thresholds) Tj
+(.) Tj
+(iterrows) Tj
+(\(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+(got) Tj
+( = ) Tj
+(float) Tj
+(\() Tj
+(row) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("threshold") Tj
+0.00 0.00 0.00 rg
+(]\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(got) Tj
+( != ) Tj
+(expected) Tj
+([) Tj
+(row) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(]]:) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("Threshold for {row['detector']} does not match quantile.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(len) Tj
+(\() Tj
+(detection) Tj
+(\) != ) Tj
+0.05 0.40 0.50 rg
+(63) Tj
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("detection.csv must have 21 rows for each of 3 detectors.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(faults) Tj
+( = ) Tj
+(set) Tj
+(\() Tj
+(detection) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("fault") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(astype) Tj
+(\() Tj
+(int) Tj
+(\)\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(faults) Tj
+( != ) Tj
+(set) Tj
+(\() Tj
+(range) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(21) Tj
+0.00 0.00 0.00 rg
+(\)\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("detection.csv is missing a fault from 0 to 20.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(run) Tj
+(\(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Fit, score, evaluate, diagnose, and write the report.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    Does not call the course evidence script.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(_check_alarm_rule) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(verify_checksums) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(plant) Tj
+( = ) Tj
+(load_plant) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(model) Tj
+(, ) Tj
+(k) Tj
+( = ) Tj
+(fit_pca) Tj
+(\() Tj
+(plant) Tj
+(.) Tj
+(train_z) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(cumulative) Tj
+( = ) Tj
+(np) Tj
+(.) Tj
+(cumsum) Tj
+(\() Tj
+(model) Tj
+(.) Tj
+(explained_variance_ratio_) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(variance) Tj
+( = ) Tj
+(float) Tj
+(\() Tj
+(cumulative) Tj
+([) Tj
+(k) Tj
+( - ) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(]\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(pca_scores) Tj
+( = ) Tj
+(_cast_keys) Tj
+(\() Tj
+(score_pca) Tj
+(\() Tj
+(model) Tj
+(, ) Tj
+(k) Tj
+(, ) Tj
+(plant) Tj
+(.) Tj
+(score_z) Tj
+(, ) Tj
+(plant) Tj
+(.) Tj
+(score_meta) Tj
+(\)\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(reconstructed) Tj
+( = ) Tj
+(reconstruction) Tj
+(\() Tj
+(model) Tj
+(, ) Tj
+(k) Tj
+(, ) Tj
+(plant) Tj
+(.) Tj
+(score_z) Tj
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_model) Tj
+(, ) Tj
+(resid_std) Tj
+( = ) Tj
+(fit_ridge) Tj
+(\() Tj
+(plant) Tj
+(.) Tj
+(train_z) Tj
+(, ) Tj
+(plant) Tj
+(.) Tj
+(train_meta) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# The recipe checks that the code contains a ridge fit. This is that fit.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(not) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(hasattr) Tj
+(\() Tj
+(ridge_model) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("coef_") Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Ridge model was not fit.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_scores) Tj
+(, ) Tj
+(ridge_contrib) Tj
+( = ) Tj
+(score_ridge) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(ridge_model) Tj
+(, ) Tj
+(resid_std) Tj
+(, ) Tj
+(plant) Tj
+(.) Tj
+(score_z) Tj
+(, ) Tj
+(plant) Tj
+(.) Tj
+(score_meta) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_scores) Tj
+( = ) Tj
+(_cast_keys) Tj
+(\() Tj
+(ridge_scores) Tj
+(\)) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 16 of 18) Tj ET
+endstream
+endobj
+37 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 38 0 R >>
+endobj
+38 0 obj
+<< /Length 8361 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(    ) Tj
+(_assert_score_rows) Tj
+(\() Tj
+(pca_scores) Tj
+(, ) Tj
+(ridge_scores) Tj
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(thresholds) Tj
+(, ) Tj
+(detection) Tj
+(, ) Tj
+(alarmed) Tj
+( = ) Tj
+(build_thresholds_and_detection) Tj
+(\() Tj
+(pca_scores) Tj
+(, ) Tj
+(ridge_scores) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(_assert_tables_match_scores) Tj
+(\() Tj
+(pca_scores) Tj
+(, ) Tj
+(ridge_scores) Tj
+(, ) Tj
+(thresholds) Tj
+(, ) Tj
+(detection) Tj
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(spe_table) Tj
+( = ) Tj
+(spe_contribution_table) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(plant) Tj
+(.) Tj
+(score_z) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(plant) Tj
+(.) Tj
+(score_meta) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(reconstructed) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(alarmed) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(],) Tj
+T*
+(  ) Tj
+(        ) Tj
+(plant) Tj
+(.) Tj
+(channels) Tj
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_table) Tj
+( = ) Tj
+(ridge_contribution_table) Tj
+(\() Tj
+(ridge_contrib) Tj
+(, ) Tj
+(alarmed) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("ridge") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+(plant) Tj
+(.) Tj
+(channels) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(contributions) Tj
+( = ) Tj
+(pd) Tj
+(.) Tj
+(concat) Tj
+(\([) Tj
+(spe_table) Tj
+(, ) Tj
+(ridge_table) Tj
+(], ) Tj
+(ignore_index) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(contributions) Tj
+( = ) Tj
+(contributions) Tj
+(.) Tj
+(sort_values) Tj
+(\() Tj
+T*
+(  ) Tj
+(        [) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("fault") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("rank") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+(kind) Tj
+(=) Tj
+0.62 0.20 0.12 rg
+("mergesort") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    \).) Tj
+(reset_index) Tj
+(\() Tj
+(drop) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(RESULTS_DIR) Tj
+(.) Tj
+(mkdir) Tj
+(\() Tj
+(parents) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+(exist_ok) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(pca_path) Tj
+( = ) Tj
+(RESULTS_DIR) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("scores_pca.parquet") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(ridge_path) Tj
+( = ) Tj
+(RESULTS_DIR) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("scores_ridge.parquet") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(pca_scores) Tj
+(.) Tj
+(to_parquet) Tj
+(\() Tj
+(pca_path) Tj
+(, ) Tj
+(index) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_scores) Tj
+(.) Tj
+(to_parquet) Tj
+(\() Tj
+(ridge_path) Tj
+(, ) Tj
+(index) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(_write_csv) Tj
+(\() Tj
+(thresholds) Tj
+(, ) Tj
+(RESULTS_DIR) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("thresholds.csv") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(_write_csv) Tj
+(\() Tj
+(detection) Tj
+(, ) Tj
+(RESULTS_DIR) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("detection.csv") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(_write_csv) Tj
+(\() Tj
+(contributions) Tj
+(, ) Tj
+(RESULTS_DIR) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("contributions.csv") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# Read the parquet back. This is our check, not the course evidence script.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(reloaded) Tj
+( = ) Tj
+(pd) Tj
+(.) Tj
+(read_parquet) Tj
+(\() Tj
+(pca_path) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(not) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+(.) Tj
+(allclose) Tj
+(\() Tj
+(reloaded) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+(pca_scores) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+(rtol) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+(atol) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("PCA parquet did not round-trip.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(figure) Tj
+( = ) Tj
+(plot_fault_run) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(pca_scores) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(ridge_scores) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(dict) Tj
+(\() Tj
+(zip) Tj
+(\() Tj
+(thresholds) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+(thresholds) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("threshold") Tj
+0.00 0.00 0.00 rg
+(]\)\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+(fault) Tj
+(=) Tj
+(pick_plot_fault) Tj
+(\() Tj
+(detection) Tj
+(\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+(run) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(write_report) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(detection) Tj
+(=) Tj
+(detection) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(thresholds) Tj
+(=) Tj
+(thresholds) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(contributions) Tj
+(=) Tj
+(contributions) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(figure) Tj
+(=) Tj
+(figure) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(k) Tj
+(=) Tj
+(k) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(variance) Tj
+(=) Tj
+(variance) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(pca_scores) Tj
+(=) Tj
+(pca_scores) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(ridge_scores) Tj
+(=) Tj
+(ridge_scores) Tj
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(_print_summary) Tj
+(\() Tj
+(detection) Tj
+(, ) Tj
+(k) Tj
+(, ) Tj
+(variance) Tj
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_print_summary) Tj
+(\() Tj
+(detection) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(k) Tj
+(: ) Tj
+(int) Tj
+(, ) Tj
+(variance) Tj
+(: ) Tj
+(float) Tj
+(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+(print) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("\\nPCA k={k}  retained variance={variance:.4f}") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(print) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("fault  T2_rate  SPE_rate  ridge_rate  T2_miss  SPE_miss  ridge_miss") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(fault) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(range) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(21) Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+(cells) Tj
+( = []) Tj
+T*
+(  ) Tj
+(        ) Tj
+(misses) Tj
+( = []) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(detector) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( \() Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("ridge") Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(            ) Tj
+(row) Tj
+( = ) Tj
+(detection) Tj
+([) Tj
+T*
+(  ) Tj
+(                \() Tj
+(detection) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("fault") Tj
+0.00 0.00 0.00 rg
+(] == ) Tj
+(fault) Tj
+(\) & \() Tj
+(detection) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(] == ) Tj
+(detector) Tj
+(\)) Tj
+T*
+(  ) Tj
+(            ].) Tj
+(iloc) Tj
+([) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+(            ) Tj
+(cells) Tj
+(.) Tj
+(append) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("{row['detection_rate']:.3f}") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(            ) Tj
+(missed) Tj
+( = ) Tj
+(row) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("runs_missed") Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+(            ) Tj
+(misses) Tj
+(.) Tj
+(append) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("  .") Tj
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pd) Tj
+(.) Tj
+(isna) Tj
+(\() Tj
+(missed) Tj
+(\) ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(else) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("{int\(missed\):3d}") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(print) Tj
+(\() Tj
+T*
+(  ) Tj
+(            ) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("{fault:5d}  {cells[0]:>7}  {cells[1]:>8}  {cells[2]:>10}  ") Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 17 of 18) Tj ET
+endstream
+endobj
+39 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 40 0 R >>
+endobj
+40 0 obj
+<< /Length 907 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(            ) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("{misses[0]}  {misses[1]}  {misses[2]}") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(        \)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(__name__) Tj
+( == ) Tj
+0.62 0.20 0.12 rg
+("__main__") Tj
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+(run) Tj
+(\(\)) Tj
+T*
+T*
+/F2 8 Tf
 (Summary line) Tj
 T*
 T*
@@ -8630,54 +10466,60 @@ T*
 (  {"team": "banana_bread_matcha_latte", "andrew_ids": ["marktan", "mingyaox", "hsuanlec", "xinranl3"],) Tj
 T*
 (      ) Tj
-("generated": "2026-10-08 15:28 EDT", "auto_score": 10.0, "auto_of": 10, "held_for_ta": 0.0, "total":) Tj
+("generated": "2026-10-08 15:35 EDT", "auto_score": 10.0, "auto_of": 10, "held_for_ta": 0.0, "total":) Tj
 T*
 (      ) Tj
 (15, "script_sha256": "744445fa94498271372f89d7a8053499fd20999c7754842f770eb7bd5f4a157a"}) Tj
 T*
 ET
-BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 15 of 15) Tj ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 18 of 18) Tj ET
 endstream
 endobj
 xref
-0 35
+0 41
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
-0000000212 00000 n 
-0000000280 00000 n 
-0000000353 00000 n 
-0000000489 00000 n 
-0000005422 00000 n 
-0000005558 00000 n 
-0000009755 00000 n 
-0000009892 00000 n 
-0000016238 00000 n 
-0000016376 00000 n 
-0000022401 00000 n 
-0000022539 00000 n 
-0000031386 00000 n 
-0000031524 00000 n 
-0000043098 00000 n 
-0000043236 00000 n 
-0000049830 00000 n 
-0000049968 00000 n 
-0000059434 00000 n 
-0000059572 00000 n 
-0000068319 00000 n 
-0000068457 00000 n 
-0000074566 00000 n 
-0000074704 00000 n 
-0000082727 00000 n 
-0000082865 00000 n 
-0000091116 00000 n 
-0000091254 00000 n 
-0000099997 00000 n 
-0000100135 00000 n 
-0000107366 00000 n 
-0000107504 00000 n 
+0000000233 00000 n 
+0000000301 00000 n 
+0000000374 00000 n 
+0000000510 00000 n 
+0000005443 00000 n 
+0000005579 00000 n 
+0000009776 00000 n 
+0000009913 00000 n 
+0000014925 00000 n 
+0000015063 00000 n 
+0000023505 00000 n 
+0000023643 00000 n 
+0000034516 00000 n 
+0000034654 00000 n 
+0000041884 00000 n 
+0000042022 00000 n 
+0000051613 00000 n 
+0000051751 00000 n 
+0000060899 00000 n 
+0000061037 00000 n 
+0000066734 00000 n 
+0000066872 00000 n 
+0000075206 00000 n 
+0000075344 00000 n 
+0000083210 00000 n 
+0000083348 00000 n 
+0000092307 00000 n 
+0000092445 00000 n 
+0000099741 00000 n 
+0000099879 00000 n 
+0000108340 00000 n 
+0000108478 00000 n 
+0000117340 00000 n 
+0000117478 00000 n 
+0000127643 00000 n 
+0000127781 00000 n 
+0000136195 00000 n 
+0000136333 00000 n 
 trailer
-<< /Size 35 /Root 1 0 R >>
+<< /Size 41 /Root 1 0 R >>
 startxref
-115533
+137292
 %%EOF
