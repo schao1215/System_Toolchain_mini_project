@@ -1,0 +1,10525 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 18 /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R 29 0 R 31 0 R 33 0 R 35 0 R 37 0 R 39 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 4881 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+/F2 8 Tf
+(Miniproject evidence) Tj
+T*
+T*
+/F1 8 Tf
+(team banana_bread_matcha_latte: marktan, mingyaox, hsuanlec, xinranl3) Tj
+T*
+(generated 2026-10-08 15:06 EDT on macOS-26.6.2-arm64-arm-64bit, polars 2.0.0, numpy 2.5.3) Tj
+T*
+(project System_Toolchain_mini_project) Tj
+T*
+(evidence script sha256 744445fa94498271372f89d7a8053499fd20999c7754842f770eb7bd5f4a157a) Tj
+T*
+T*
+/F2 8 Tf
+(Score  ) Tj
+0.00 0.45 0.15 rg
+(10.0 / 10) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  automatic, of 15 for the miniproject.) Tj
+T*
+0.40 0.40 0.40 rg
+(  REPORT.pdf is worth 5, is submitted separately, and is read by your TA.) Tj
+T*
+T*
+/F2 8 Tf
+0.00 0.00 0.00 rg
+(What this script found) Tj
+T*
+T*
+/F1 8 Tf
+(  free           data/tep_fault_free_training.parquet) Tj
+T*
+(  faulty         data/tep_faulty_training_runs01-20.parquet) Tj
+T*
+(  pca            results/scores_pca.parquet) Tj
+T*
+(  ridge          results/scores_ridge.parquet) Tj
+T*
+(  thresholds     results/thresholds.csv) Tj
+T*
+(  detection      results/detection.csv) Tj
+T*
+(  contributions  results/contributions.csv) Tj
+T*
+T*
+/F2 8 Tf
+(Detectors) Tj
+(   5.0 / 5) Tj
+T*
+T*
+/F1 8 Tf
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  scores_pca.parquet present) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  every required PCA row scored) Tj
+T*
+0.40 0.40 0.40 rg
+(          100.00% covered, 0 extra rows) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  T2 matches the reference) Tj
+T*
+0.40 0.40 0.40 rg
+(          100.00% of rows within 0.1 %) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  SPE matches the reference) Tj
+T*
+0.40 0.40 0.40 rg
+(          100.00% of rows within 0.1 %) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  scores_ridge.parquet present) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  every required ridge row scored) Tj
+T*
+0.40 0.40 0.40 rg
+(          100.00% covered, 0 extra rows) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  ridge score matches the reference) Tj
+T*
+0.40 0.40 0.40 rg
+(          100.00% of rows within 0.1 %) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  a ridge regression fit in the code) Tj
+T*
+T*
+/F2 8 Tf
+(Evaluation and diagnosis) Tj
+(   5.0 / 5) Tj
+T*
+T*
+/F1 8 Tf
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  thresholds.csv with T2, SPE and ridge) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  thresholds are the 99th percentile of the team's validation scores) Tj
+T*
+0.40 0.40 0.40 rg
+(          agree for ['T2', 'SPE', 'ridge']) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  detection.csv matches a recomputation from the team's scores) Tj
+T*
+0.40 0.40 0.40 rg
+(          100% of fault/detector detection rates agree within 0.001) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  false-alarm rows \(fault 0\) reported for each detector) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  detection.csv covers faults 1 to 20 for all three detectors) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  faults 3, 9 and 15 reported as not detected) Tj
+T*
+0.40 0.40 0.40 rg
+(          largest rate 0.000) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  contributions.csv present) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.00 0.45 0.15 rg
+([PASS]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  top channels match the reference) Tj
+T*
+0.40 0.40 0.40 rg
+(          100% of fault/detector top channels agree) Tj
+T*
+T*
+/F2 8 Tf
+0.00 0.00 0.00 rg
+(REPORT.pdf) Tj
+(   5 points, read by your TA) Tj
+T*
+T*
+/F1 8 Tf
+(  ) Tj
+/F2 8 Tf
+0.60 0.42 0.00 rg
+([SKIP]) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  REPORT.pdf, submitted separately and read by your TA) Tj
+T*
+T*
+/F2 8 Tf
+(Transcript) Tj
+T*
+T*
+(  data) Tj
+T*
+T*
+/F1 8 Tf
+0.40 0.40 0.40 rg
+(    tep_fault_free_training.parquet: tep_fault_free_training.parquet, sha256 matches the published file) Tj
+T*
+(    tep_faulty_training_runs01-20.parquet: tep_faulty_training_runs01-20.parquet, sha256 matches the) Tj
+T*
+0.00 0.00 0.00 rg
+(      ) Tj
+0.40 0.40 0.40 rg
+(published file) Tj
+T*
+T*
+/F2 8 Tf
+0.00 0.00 0.00 rg
+(  the script's own detectors) Tj
+T*
+T*
+/F1 8 Tf
+0.40 0.40 0.40 rg
+(    PCA: 31 components reach 90% of the variance) Tj
+T*
+(    ridge: 2 lags of 52 channels, alpha 1.0) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 1 of 18) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 4145 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+0.40 0.40 0.40 rg
+(    thresholds \(99th percentile of validation runs\): T2 51.7971, SPE 11.7745, ridge 112.4423) Tj
+T*
+(    rows to score: 300,000 \(validation, test, faults 1-20 runs 1-20\)) Tj
+T*
+T*
+/F2 8 Tf
+0.00 0.00 0.00 rg
+(  scores_pca.parquet against the reference) Tj
+T*
+T*
+/F1 8 Tf
+0.40 0.40 0.40 rg
+(    {) Tj
+T*
+(     "rows_mine": 300000,) Tj
+T*
+(     "rows_ref": 300000,) Tj
+T*
+(     "covered": 1.0,) Tj
+T*
+(     "extra": 0,) Tj
+T*
+(     "t2": 1.0,) Tj
+T*
+(     "spe": 1.0) Tj
+T*
+(    }) Tj
+T*
+T*
+/F2 8 Tf
+0.00 0.00 0.00 rg
+(  scores_ridge.parquet against the reference) Tj
+T*
+T*
+/F1 8 Tf
+0.40 0.40 0.40 rg
+(    {) Tj
+T*
+(     "rows_mine": 298800,) Tj
+T*
+(     "rows_ref": 298800,) Tj
+T*
+(     "covered": 1.0,) Tj
+T*
+(     "extra": 0,) Tj
+T*
+(     "score": 1.0) Tj
+T*
+(    }) Tj
+T*
+T*
+/F2 8 Tf
+0.00 0.00 0.00 rg
+(  detection.csv against a recomputation) Tj
+T*
+T*
+/F1 8 Tf
+0.40 0.40 0.40 rg
+(    100% of fault/detector detection rates agree within 0.001) Tj
+T*
+(    100% of median delays agree) Tj
+T*
+(    shape: \(12, 7\)) Tj
+T*
+(    ???????????????????????????????????????????????????????????????????????????????????????????????) Tj
+T*
+(    ? fault ? detector ? detection_rate ? median_delay_min ? runs_missed ? rate_mine ? delay_mine ?) Tj
+T*
+(    ? ---   ? ---      ? ---            ? ---              ? ---         ? ---       ? ---        ?) Tj
+T*
+(    ? i64   ? str      ? f64            ? f64              ? i64         ? f64       ? f64        ?) Tj
+T*
+(    ???????????????????????????????????????????????????????????????????????????????????????????????) Tj
+T*
+(    ? 0     ? T2       ? 0.00052        ? null             ? null        ? 0.00052   ? null       ?) Tj
+T*
+(    ? 1     ? T2       ? 0.985417       ? 25.5             ? 0           ? 0.985417  ? 25.5       ?) Tj
+T*
+(    ? 2     ? T2       ? 0.972813       ? 39.0             ? 0           ? 0.972813  ? 39.0       ?) Tj
+T*
+(    ? 3     ? T2       ? 0.000208       ? 231.0            ? 19          ? 0.000208  ? 231.0      ?) Tj
+T*
+(    ? 4     ? T2       ? 0.091354       ? 64.5             ? 0           ? 0.091354  ? 64.5       ?) Tj
+T*
+(    ? ?     ? ?        ? ?              ? ?                ? ?           ? ?         ? ?          ?) Tj
+T*
+(    ? 7     ? T2       ? 0.995937       ? 9.0              ? 0           ? 0.995937  ? 9.0        ?) Tj
+T*
+(    ? 8     ? T2       ? 0.941875       ? 70.5             ? 0           ? 0.941875  ? 70.5       ?) Tj
+T*
+(    ? 9     ? T2       ? 0.000104       ? 231.0            ? 19          ? 0.000104  ? 231.0      ?) Tj
+T*
+(    ? 10    ? T2       ? 0.084896       ? 471.0            ? 0           ? 0.084896  ? 471.0      ?) Tj
+T*
+(    ? 11    ? T2       ? 0.257708       ? 43.5             ? 0           ? 0.257708  ? 43.5       ?) Tj
+T*
+(    ???????????????????????????????????????????????????????????????????????????????????????????????) Tj
+T*
+T*
+/F2 8 Tf
+0.00 0.00 0.00 rg
+(  contributions.csv against the reference) Tj
+T*
+T*
+/F1 8 Tf
+0.40 0.40 0.40 rg
+(    34 of 34 top channels agree) Tj
+T*
+(      fault  1 SPE    reference xmeas_4   yours xmeas_4) Tj
+T*
+(      fault  1 ridge  reference xmeas_1   yours xmeas_1) Tj
+T*
+(      fault  2 SPE    reference xmeas_25  yours xmeas_25) Tj
+T*
+(      fault  2 ridge  reference xmeas_10  yours xmeas_10) Tj
+T*
+(      fault  4 SPE    reference xmv_10    yours xmv_10) Tj
+T*
+(      fault  4 ridge  reference xmv_10    yours xmv_10) Tj
+T*
+(      fault  5 SPE    reference xmeas_38  yours xmeas_38) Tj
+T*
+(      fault  5 ridge  reference xmeas_1   yours xmeas_1) Tj
+T*
+(      fault  6 SPE    reference xmv_5     yours xmv_5) Tj
+T*
+(      fault  6 ridge  reference xmeas_1   yours xmeas_1) Tj
+T*
+(      fault  7 SPE    reference xmeas_4   yours xmeas_4) Tj
+T*
+(      fault  7 ridge  reference xmv_4     yours xmv_4) Tj
+T*
+T*
+/F2 8 Tf
+0.00 0.00 0.00 rg
+(  the script's detection table, for comparison) Tj
+T*
+T*
+/F1 8 Tf
+0.40 0.40 0.40 rg
+(    shape: \(21, 4\)) Tj
+T*
+(    ???????????????????????????????????????????) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 2 of 18) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 4959 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+0.40 0.40 0.40 rg
+(    ? fault ? T2       ? SPE       ? ridge    ?) Tj
+T*
+(    ? ---   ? ---      ? ---       ? ---      ?) Tj
+T*
+(    ? i64   ? f64      ? f64       ? f64      ?) Tj
+T*
+(    ???????????????????????????????????????????) Tj
+T*
+(    ? 0     ? 0.00052  ? 0.0       ? 0.0      ?) Tj
+T*
+(    ? 1     ? 0.985417 ? 0.991875  ? 0.993542 ?) Tj
+T*
+(    ? 2     ? 0.972813 ? 0.958958  ? 0.965104 ?) Tj
+T*
+(    ? 3     ? 0.000208 ? 0.0       ? 0.0      ?) Tj
+T*
+(    ? 4     ? 0.091354 ? 0.994167  ? 0.968854 ?) Tj
+T*
+(    ? ?     ? ?        ? ?         ? ?        ?) Tj
+T*
+(    ? 16    ? 0.019375 ? 0.101146  ? 0.711875 ?) Tj
+T*
+(    ? 17    ? 0.665938 ? 0.8678125 ? 0.866875 ?) Tj
+T*
+(    ? 18    ? 0.870833 ? 0.884375  ? 0.892708 ?) Tj
+T*
+(    ? 19    ? 0.009896 ? 0.003333  ? 0.029167 ?) Tj
+T*
+(    ? 20    ? 0.13625  ? 0.432188  ? 0.635104 ?) Tj
+T*
+(    ???????????????????????????????????????????) Tj
+T*
+T*
+/F2 8 Tf
+0.00 0.00 0.00 rg
+(Code: src/miniproject/__init__.py) Tj
+T*
+T*
+/F1 8 Tf
+(  ) Tj
+0.62 0.20 0.12 rg
+("""Tennessee Eastman fault detectors trained on normal data only.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(Run the full pipeline with `uv run miniproject`.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(This package does not call the course evidence script.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(main) Tj
+(\(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Entry point registered in pyproject.toml as `miniproject`.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(pipeline) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(run) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(run) Tj
+(\(\)) Tj
+T*
+T*
+/F2 8 Tf
+(Code: src/miniproject/__main__.py) Tj
+T*
+T*
+/F1 8 Tf
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(main) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(main) Tj
+(\(\)) Tj
+T*
+T*
+/F2 8 Tf
+(Code: src/miniproject/config.py) Tj
+T*
+T*
+/F1 8 Tf
+(  ) Tj
+0.62 0.20 0.12 rg
+("""Shared choices from the project recipe.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(The two detectors are independent, but the assignment says they share this) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(preprocessing, so it lives in one place:) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "Channels: all 52: xmeas_1 to xmeas_41 and xmv_1 to xmv_11") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "Training runs: fault-free runs 1 to 300") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "Validation runs: fault-free runs 301 to 400, used only to set thresholds") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "Test runs: fault-free runs 401 to 500, used only to measure false alarms") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "Faulty runs: faults 1 to 20, runs 1 to 20") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "Standardization: subtract each channel's mean and divide by its standard) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(     deviation \(ddof=1\), both computed on the training runs") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pathlib) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(Path) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+0.35 0.48 0.38 rg
+(# Project root is two levels above this file: src/miniproject/config.py) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(ROOT) Tj
+( = ) Tj
+(Path) Tj
+(\() Tj
+(__file__) Tj
+(\).) Tj
+(resolve) Tj
+(\(\).) Tj
+(parents) Tj
+([) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+(DATA_DIR) Tj
+( = ) Tj
+(ROOT) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("data") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(RESULTS_DIR) Tj
+( = ) Tj
+(ROOT) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("results") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(FIGURES_DIR) Tj
+( = ) Tj
+(ROOT) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("figures") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.35 0.48 0.38 rg
+(# "Samples are 3 minutes apart, so a run is 25 hours.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(SAMPLE_MINUTES) Tj
+( = ) Tj
+0.05 0.40 0.50 rg
+(3) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.35 0.48 0.38 rg
+(# "In the faulty file, each fault is introduced one hour into the run, so) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.35 0.48 0.38 rg
+(# samples 1 to 20 are normal and samples 21 onward are faulty.") Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 3 of 18) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 12 0 R >>
+endobj
+12 0 obj
+<< /Length 8389 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(FAULT_START_SAMPLE) Tj
+( = ) Tj
+0.05 0.40 0.50 rg
+(20) Tj
+0.00 0.00 0.00 rg
+(  ) Tj
+0.35 0.48 0.38 rg
+(# last normal sample; scores after this sample are faulty) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+(N_CHANNELS_MEAS) Tj
+( = ) Tj
+0.05 0.40 0.50 rg
+(41) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(N_CHANNELS_MV) Tj
+( = ) Tj
+0.05 0.40 0.50 rg
+(11) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+(TRAIN_RUNS) Tj
+( = ) Tj
+(range) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(301) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(VAL_RUNS) Tj
+( = ) Tj
+(range) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(301) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(401) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(TEST_RUNS) Tj
+( = ) Tj
+(range) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(401) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(501) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(FAULTY_RUNS) Tj
+( = ) Tj
+(range) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(21) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(FAULTS) Tj
+( = ) Tj
+(range) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(21) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+0.35 0.48 0.38 rg
+(# 99th percentile on held-out normal runs. NumPy's default interpolation.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(QUANTILE) Tj
+( = ) Tj
+0.05 0.40 0.50 rg
+(0.99) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.35 0.48 0.38 rg
+(# "Keep the smallest number of components k whose eigenvalues add up to) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.35 0.48 0.38 rg
+(# at least 90% of the total.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(PCA_VARIANCE) Tj
+( = ) Tj
+0.05 0.40 0.50 rg
+(0.90) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.35 0.48 0.38 rg
+(# "Fit one Ridge\(alpha=1.0\) on the training runs.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(RIDGE_ALPHA) Tj
+( = ) Tj
+0.05 0.40 0.50 rg
+(1.0) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.35 0.48 0.38 rg
+(# Detector names as written in the recipe: \(`T2`, `SPE`, `ridge`\).) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(DETECTORS) Tj
+( = \() Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("ridge") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(CONTRIBUTION_DETECTORS) Tj
+( = \() Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("ridge") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+0.35 0.48 0.38 rg
+(# "keeping the top five channels per fault and detector") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(TOP_CHANNELS) Tj
+( = ) Tj
+0.05 0.40 0.50 rg
+(5) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.35 0.48 0.38 rg
+(# A fault is treated as caught in the report when more than this share of) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.35 0.48 0.38 rg
+(# post-sample-20 rows are in alarm. The alarm rule already suppresses isolated) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.35 0.48 0.38 rg
+(# spikes, so 0.10 is well above the roughly 1% threshold rate.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(CAUGHT_RATE) Tj
+( = ) Tj
+0.05 0.40 0.50 rg
+(0.10) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(measurement_names) Tj
+(\(\) -> ) Tj
+(list) Tj
+([) Tj
+(str) Tj
+(]:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Return the 52 channel names in recipe order.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(meas) Tj
+( = [) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("xmeas_{i}") Tj
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(i) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(range) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+(N_CHANNELS_MEAS) Tj
+( + ) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(\)]) Tj
+T*
+(  ) Tj
+(    ) Tj
+(mv) Tj
+( = [) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("xmv_{i}") Tj
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(i) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(range) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+(N_CHANNELS_MV) Tj
+( + ) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(\)]) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(meas) Tj
+( + ) Tj
+(mv) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+0.35 0.48 0.38 rg
+(# Downs and Vogel \(1993\), the usual TEP measurement table. Used only so the) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.35 0.48 0.38 rg
+(# report can say what a channel is. The model itself uses the raw names.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(CHANNEL_DESCRIPTION) Tj
+(: ) Tj
+(dict) Tj
+([) Tj
+(str) Tj
+(, ) Tj
+(str) Tj
+(] = {) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_1") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("A feed \(stream 1\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_2") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("D feed \(stream 2\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_3") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("E feed \(stream 3\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_4") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("A and C feed \(stream 4\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_5") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("recycle flow \(stream 8\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_6") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor feed rate \(stream 6\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_7") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor pressure") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_8") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor level") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_9") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor temperature") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_10") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("purge rate \(stream 9\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_11") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("product separator temperature") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_12") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("product separator level") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_13") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("product separator pressure") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_14") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("product separator underflow \(stream 10\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_15") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("stripper level") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_16") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("stripper pressure") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_17") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("stripper underflow \(stream 11\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_18") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("stripper temperature") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_19") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("stripper steam flow") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_20") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("compressor work") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_21") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor cooling water outlet temperature") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_22") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("separator cooling water outlet temperature") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_23") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor feed composition A") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 4 of 18) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 14 0 R >>
+endobj
+14 0 obj
+<< /Length 10819 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_24") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor feed composition B") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_25") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor feed composition C") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_26") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor feed composition D") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_27") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor feed composition E") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_28") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor feed composition F") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_29") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("purge composition A") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_30") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("purge composition B") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_31") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("purge composition C") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_32") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("purge composition D") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_33") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("purge composition E") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_34") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("purge composition F") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_35") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("purge composition G") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_36") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("purge composition H") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_37") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("product composition D") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_38") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("product composition E") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_39") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("product composition F") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_40") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("product composition G") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmeas_41") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("product composition H") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmv_1") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("D feed flow valve \(stream 2\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmv_2") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("E feed flow valve \(stream 3\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmv_3") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("A feed flow valve \(stream 1\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmv_4") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("A and C feed flow valve \(stream 4\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmv_5") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("compressor recycle valve") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmv_6") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("purge valve \(stream 9\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmv_7") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("separator liquid flow valve \(stream 10\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmv_8") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("stripper liquid product valve \(stream 11\)") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmv_9") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("stripper steam valve") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmv_10") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor cooling water flow valve") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("xmv_11") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("condenser cooling water flow valve") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(}) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+0.35 0.48 0.38 rg
+(# Chiang, Russell and Braatz \(2000\), Table 1. IDV 1 to 20.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(FAULT_DESCRIPTION) Tj
+(: ) Tj
+(dict) Tj
+([) Tj
+(int) Tj
+(, ) Tj
+(str) Tj
+(] = {) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("A/C feed ratio, B composition constant \(stream 4\); step") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("B composition, A/C ratio constant \(stream 4\); step") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(3) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("D feed temperature \(stream 2\); step") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(4) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor cooling water inlet temperature; step") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(5) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("condenser cooling water inlet temperature; step") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(6) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("A feed loss \(stream 1\); step") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(7) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("C header pressure loss, reduced availability \(stream 4\); step") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(8) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("A, B, C feed composition \(stream 4\); random variation") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(9) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("D feed temperature \(stream 2\); random variation") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(10) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("C feed temperature \(stream 4\); random variation") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(11) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor cooling water inlet temperature; random variation") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(12) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("condenser cooling water inlet temperature; random variation") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(13) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reaction kinetics; slow drift") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(14) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("reactor cooling water valve; sticking") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(15) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("condenser cooling water valve; sticking") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(16) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("unknown") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(17) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("unknown") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(18) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("unknown") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(19) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("unknown") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(20) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.62 0.20 0.12 rg
+("unknown") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(}) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+0.35 0.48 0.38 rg
+(# What a contribution plot should point at if it finds the disturbance) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.35 0.48 0.38 rg
+(# rather than a downstream symptom. The report compares the actual top) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.35 0.48 0.38 rg
+(# channels with this list. Westerhuis, Gurden and Smilde \(2000\) warn that) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.35 0.48 0.38 rg
+(# contribution plots smear, so a downstream channel can outrank the source.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(FAULT_EXPECTED_CHANNELS) Tj
+(: ) Tj
+(dict) Tj
+([) Tj
+(int) Tj
+(, ) Tj
+(set) Tj
+([) Tj
+(str) Tj
+(]] = {) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_1") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_4") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_3") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_4") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_23") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_25") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_29") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_31") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_4") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_4") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_24") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_30") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(3) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_2") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_1") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(4) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_9") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_21") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_10") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(5) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_11") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_13") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_22") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_11") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(6) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_1") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_3") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(7) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_4") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_4") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_7") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 5 of 18) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 16 0 R >>
+endobj
+16 0 obj
+<< /Length 7177 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(8) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_4") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_4") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_23") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_24") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_25") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_29") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_30") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_31") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(9) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_2") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_1") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(10) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_4") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_18") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_4") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(11) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_9") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_21") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_10") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(12) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_11") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_22") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_11") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(13) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_7") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_9") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_16") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_18") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(14) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_9") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_21") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_10") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(15) Tj
+0.00 0.00 0.00 rg
+(: {) Tj
+0.62 0.20 0.12 rg
+("xmeas_11") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmeas_22") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("xmv_11") Tj
+0.00 0.00 0.00 rg
+(},) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(16) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(set) Tj
+(\(\),) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(17) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(set) Tj
+(\(\),) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(18) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(set) Tj
+(\(\),) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(19) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(set) Tj
+(\(\),) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.05 0.40 0.50 rg
+(20) Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(set) Tj
+(\(\),) Tj
+T*
+(  ) Tj
+(}) Tj
+T*
+T*
+/F2 8 Tf
+(Code: src/miniproject/data.py) Tj
+T*
+T*
+/F1 8 Tf
+(  ) Tj
+0.62 0.20 0.12 rg
+("""Load the two TEP parquet files and standardize on the training runs.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(Quoted recipe:) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "Rows to score: every row of the validation, test and faulty runs.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "Fault-free rows have faultNumber 0.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "The evidence script refuses files that do not match.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(Training rows are used to fit the models and the scaler. They are not written) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(into the score files.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(__future__) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(annotations) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(hashlib) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(dataclasses) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(dataclass) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(numpy) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pandas) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pd) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(config) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( \() Tj
+T*
+(  ) Tj
+(    ) Tj
+(DATA_DIR) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(FAULT_START_SAMPLE) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(measurement_names) Tj
+(,) Tj
+T*
+(  ) Tj
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(@) Tj
+(dataclass) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(class) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(PlantData) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Standardized blocks plus the run labels needed to score and split them.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(channels) Tj
+(: ) Tj
+(list) Tj
+([) Tj
+(str) Tj
+(]) Tj
+T*
+(  ) Tj
+(    ) Tj
+(mean) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+T*
+(  ) Tj
+(    ) Tj
+(std) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# Each block is already standardized with the training mean and std.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(train_z) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+T*
+(  ) Tj
+(    ) Tj
+(train_meta) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+T*
+(  ) Tj
+(    ) Tj
+(score_z) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+T*
+(  ) Tj
+(    ) Tj
+(score_meta) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(verify_checksums) Tj
+(\() Tj
+(data_dir) Tj
+(=) Tj
+(DATA_DIR) Tj
+(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Refuse the local files if they do not match the published SHA256SUMS.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    The assignment says the evidence script refuses files that do not match.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    This check runs first so a bad download cannot silently train a model.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(sums_path) Tj
+( = ) Tj
+(data_dir) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("SHA256SUMS") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(not) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(sums_path) Tj
+(.) Tj
+(exists) Tj
+(\(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(FileNotFoundError) Tj
+(\() Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 6 of 18) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 18 0 R >>
+endobj
+18 0 obj
+<< /Length 9538 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(            ) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("Missing {sums_path}. Download the files in the assignment into data/.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(        \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(line) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(sums_path) Tj
+(.) Tj
+(read_text) Tj
+(\(\).) Tj
+(splitlines) Tj
+(\(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+(line) Tj
+( = ) Tj
+(line) Tj
+(.) Tj
+(strip) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(not) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(line) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(or) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(line) Tj
+(.) Tj
+(startswith) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("#") Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(continue) Tj
+T*
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  ) Tj
+(        ) Tj
+(digest) Tj
+(, ) Tj
+(name) Tj
+( = ) Tj
+(line) Tj
+(.) Tj
+(split) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(name) Tj
+( = ) Tj
+(name) Tj
+(.) Tj
+(lstrip) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("*") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(path) Tj
+( = ) Tj
+(data_dir) Tj
+( / ) Tj
+(name) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(not) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(path) Tj
+(.) Tj
+(exists) Tj
+(\(\):) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(FileNotFoundError) Tj
+(\() Tj
+(path) Tj
+(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(hasher) Tj
+( = ) Tj
+(hashlib) Tj
+(.) Tj
+(sha256) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(with) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(path) Tj
+(.) Tj
+(open) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("rb") Tj
+0.00 0.00 0.00 rg
+(\) ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(handle) Tj
+(:) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(chunk) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(iter) Tj
+(\() Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(lambda) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(: ) Tj
+(handle) Tj
+(.) Tj
+(read) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+( << ) Tj
+0.05 0.40 0.50 rg
+(20) Tj
+0.00 0.00 0.00 rg
+(\), ) Tj
+(b) Tj
+0.62 0.20 0.12 rg
+("") Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(                ) Tj
+(hasher) Tj
+(.) Tj
+(update) Tj
+(\() Tj
+(chunk) Tj
+(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(got) Tj
+( = ) Tj
+(hasher) Tj
+(.) Tj
+(hexdigest) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(got) Tj
+( != ) Tj
+(digest) Tj
+(:) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ValueError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("Checksum mismatch for {name}: {got} != {digest}") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(print) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("checksum ok  {name}") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_read_parquet) Tj
+(\() Tj
+(path) Tj
+(\) -> ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+(frame) Tj
+( = ) Tj
+(pd) Tj
+(.) Tj
+(read_parquet) Tj
+(\() Tj
+(path) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# Column names in the hosted files are expected to be xmeas_1, xmv_1,) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# simulationRun, sample, and \(on the faulty file\) faultNumber.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(frame) Tj
+(.) Tj
+(columns) Tj
+( = [) Tj
+(str) Tj
+(\() Tj
+(column) Tj
+(\) ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(column) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(frame) Tj
+(.) Tj
+(columns) Tj
+(]) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(frame) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_require_channels) Tj
+(\() Tj
+(frame) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(channels) Tj
+(: ) Tj
+(list) Tj
+([) Tj
+(str) Tj
+(]\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+(missing) Tj
+( = [) Tj
+(name) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(name) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(channels) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(name) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(not) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(frame) Tj
+(.) Tj
+(columns) Tj
+(]) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(missing) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(KeyError) Tj
+(\() Tj
+T*
+(  ) Tj
+(            ) Tj
+0.62 0.20 0.12 rg
+("Parquet file is missing channels the recipe asks for: ") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(            + ) Tj
+0.62 0.20 0.12 rg
+(", ") Tj
+0.00 0.00 0.00 rg
+(.) Tj
+(join) Tj
+(\() Tj
+(missing) Tj
+([:) Tj
+0.05 0.40 0.50 rg
+(8) Tj
+0.00 0.00 0.00 rg
+(]\)) Tj
+T*
+(  ) Tj
+(        \)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_meta) Tj
+(\() Tj
+(frame) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(fault_number) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+( | ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( = ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\) -> ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Keep the three identifier columns the score files must contain.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(fault_number) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(is) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(not) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(frame) Tj
+(.) Tj
+(columns) Tj
+(:) Tj
+T*
+(  ) Tj
+(            ) Tj
+(fault_number) Tj
+( = ) Tj
+(np) Tj
+(.) Tj
+(zeros) Tj
+(\() Tj
+(len) Tj
+(\() Tj
+(frame) Tj
+(\), ) Tj
+(dtype) Tj
+(=) Tj
+(np) Tj
+(.) Tj
+(int64) Tj
+(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(else) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(            ) Tj
+(fault_number) Tj
+( = ) Tj
+(frame) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(to_numpy) Tj
+(\() Tj
+(dtype) Tj
+(=) Tj
+(np) Tj
+(.) Tj
+(int64) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(\() Tj
+T*
+(  ) Tj
+(        {) Tj
+T*
+(  ) Tj
+(            ) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(np) Tj
+(.) Tj
+(asarray) Tj
+(\() Tj
+(fault_number) Tj
+(, ) Tj
+(dtype) Tj
+(=) Tj
+(np) Tj
+(.) Tj
+(int64) Tj
+(\),) Tj
+T*
+(  ) Tj
+(            ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(frame) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(to_numpy) Tj
+(\() Tj
+(dtype) Tj
+(=) Tj
+(np) Tj
+(.) Tj
+(int64) Tj
+(\),) Tj
+T*
+(  ) Tj
+(            ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(frame) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(to_numpy) Tj
+(\() Tj
+(dtype) Tj
+(=) Tj
+(np) Tj
+(.) Tj
+(int64) Tj
+(\),) Tj
+T*
+(  ) Tj
+(        }) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(load_plant) Tj
+(\() Tj
+(data_dir) Tj
+(=) Tj
+(DATA_DIR) Tj
+(\) -> ) Tj
+(PlantData) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Read both files, split the runs, and standardize with training ddof=1.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    Quoted rule: "subtract each channel's mean and divide by its standard) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    deviation \(ddof=1\), both computed on the training runs.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    NumPy's default std uses ddof=0, which would not match the recipe, so the) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    divisor is set explicitly.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(channels) Tj
+( = ) Tj
+(measurement_names) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(free) Tj
+( = ) Tj
+(_read_parquet) Tj
+(\() Tj
+(data_dir) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("tep_fault_free_training.parquet") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(faulty) Tj
+( = ) Tj
+(_read_parquet) Tj
+(\() Tj
+(data_dir) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("tep_faulty_training_runs01-20.parquet") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(_require_channels) Tj
+(\() Tj
+(free) Tj
+(, ) Tj
+(channels) Tj
+(\)) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 7 of 18) Tj ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 20 0 R >>
+endobj
+20 0 obj
+<< /Length 9095 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(    ) Tj
+(_require_channels) Tj
+(\() Tj
+(faulty) Tj
+(, ) Tj
+(channels) Tj
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(free_meta) Tj
+( = ) Tj
+(_meta) Tj
+(\() Tj
+(free) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(faulty_meta) Tj
+( = ) Tj
+(_meta) Tj
+(\() Tj
+(faulty) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(not) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(set) Tj
+(\() Tj
+(faulty_meta) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(unique) Tj
+(\(\)\).) Tj
+(issuperset) Tj
+(\() Tj
+(set) Tj
+(\() Tj
+(range) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(21) Tj
+0.00 0.00 0.00 rg
+(\)\)\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ValueError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Faulty file does not contain faultNumber 1 to 20.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# "samples 1 to 20 are normal and samples 21 onward are faulty.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(int) Tj
+(\() Tj
+(free_meta) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(min) Tj
+(\(\)\) != ) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(or) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(int) Tj
+(\() Tj
+(free_meta) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(max) Tj
+(\(\)\) != ) Tj
+0.05 0.40 0.50 rg
+(500) Tj
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ValueError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Expected fault-free sample numbers 1 to 500.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(FAULT_START_SAMPLE) Tj
+( != ) Tj
+0.05 0.40 0.50 rg
+(20) Tj
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ValueError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Fault injection sample drifted from the recipe.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(free_x) Tj
+( = ) Tj
+(free) Tj
+([) Tj
+(channels) Tj
+(].) Tj
+(to_numpy) Tj
+(\() Tj
+(dtype) Tj
+(=) Tj
+(np) Tj
+(.) Tj
+(float64) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(faulty_x) Tj
+( = ) Tj
+(faulty) Tj
+([) Tj
+(channels) Tj
+(].) Tj
+(to_numpy) Tj
+(\() Tj
+(dtype) Tj
+(=) Tj
+(np) Tj
+(.) Tj
+(float64) Tj
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(train_mask) Tj
+( = ) Tj
+(free_meta) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(between) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(300) Tj
+0.00 0.00 0.00 rg
+(\).) Tj
+(to_numpy) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(val_mask) Tj
+( = ) Tj
+(free_meta) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(between) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(301) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(400) Tj
+0.00 0.00 0.00 rg
+(\).) Tj
+(to_numpy) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(test_mask) Tj
+( = ) Tj
+(free_meta) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(between) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(401) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(500) Tj
+0.00 0.00 0.00 rg
+(\).) Tj
+(to_numpy) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(train_mask) Tj
+(.) Tj
+(sum) Tj
+(\(\) == ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(or) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(val_mask) Tj
+(.) Tj
+(sum) Tj
+(\(\) == ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(or) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(test_mask) Tj
+(.) Tj
+(sum) Tj
+(\(\) == ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ValueError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Fault-free file is missing training, validation, or test runs.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# Mean and std come from training runs only. Validation is reserved for) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# thresholds, and the test runs are reserved for the false-alarm rate.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(train_x) Tj
+( = ) Tj
+(free_x) Tj
+([) Tj
+(train_mask) Tj
+(]) Tj
+T*
+(  ) Tj
+(    ) Tj
+(mean) Tj
+( = ) Tj
+(train_x) Tj
+(.) Tj
+(mean) Tj
+(\() Tj
+(axis) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(std) Tj
+( = ) Tj
+(train_x) Tj
+(.) Tj
+(std) Tj
+(\() Tj
+(axis) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+(ddof) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+(.) Tj
+(any) Tj
+(\() Tj
+(std) Tj
+( == ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+(dead) Tj
+( = [) Tj
+(channels) Tj
+([) Tj
+(i) Tj
+(] ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(i) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+(.) Tj
+(flatnonzero) Tj
+(\() Tj
+(std) Tj
+( == ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(\)]) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ValueError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("Zero training std for {dead}") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(standardize) Tj
+(\() Tj
+(values) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+(\) -> ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( \() Tj
+(values) Tj
+( - ) Tj
+(mean) Tj
+(\) / ) Tj
+(std) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(train_z) Tj
+( = ) Tj
+(standardize) Tj
+(\() Tj
+(train_x) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(score_z) Tj
+( = ) Tj
+(np) Tj
+(.) Tj
+(vstack) Tj
+(\() Tj
+T*
+(  ) Tj
+(        [) Tj
+T*
+(  ) Tj
+(            ) Tj
+(standardize) Tj
+(\() Tj
+(free_x) Tj
+([) Tj
+(val_mask) Tj
+(]\),) Tj
+T*
+(  ) Tj
+(            ) Tj
+(standardize) Tj
+(\() Tj
+(free_x) Tj
+([) Tj
+(test_mask) Tj
+(]\),) Tj
+T*
+(  ) Tj
+(            ) Tj
+(standardize) Tj
+(\() Tj
+(faulty_x) Tj
+(\),) Tj
+T*
+(  ) Tj
+(        ]) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(score_meta) Tj
+( = ) Tj
+(pd) Tj
+(.) Tj
+(concat) Tj
+(\() Tj
+T*
+(  ) Tj
+(        [) Tj
+T*
+(  ) Tj
+(            ) Tj
+(free_meta) Tj
+(.) Tj
+(loc) Tj
+([) Tj
+(val_mask) Tj
+(],) Tj
+T*
+(  ) Tj
+(            ) Tj
+(free_meta) Tj
+(.) Tj
+(loc) Tj
+([) Tj
+(test_mask) Tj
+(],) Tj
+T*
+(  ) Tj
+(            ) Tj
+(faulty_meta) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ],) Tj
+T*
+(  ) Tj
+(        ) Tj
+(ignore_index) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# Fault-free scored rows are validation and test. Force faultNumber 0) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# even if the source file stored something else.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(score_meta) Tj
+(.) Tj
+(loc) Tj
+([) Tj
+(score_meta) Tj
+(.) Tj
+(index) Tj
+([: ) Tj
+(val_mask) Tj
+(.) Tj
+(sum) Tj
+(\(\) + ) Tj
+(test_mask) Tj
+(.) Tj
+(sum) Tj
+(\(\)], ) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(] = ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(score_meta) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(] = ) Tj
+(score_meta) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(astype) Tj
+(\() Tj
+(np) Tj
+(.) Tj
+(int64) Tj
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(train_meta) Tj
+( = ) Tj
+(free_meta) Tj
+(.) Tj
+(loc) Tj
+([) Tj
+(train_mask) Tj
+(].) Tj
+(reset_index) Tj
+(\() Tj
+(drop) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(train_meta) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(] = ) Tj
+(np) Tj
+(.) Tj
+(int64) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(print) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+0.62 0.20 0.12 rg
+("rows  ") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(        ) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("train={len\(train_meta\):,}  ") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(        ) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("to_score={len\(score_meta\):,}  ") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(        ) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("channels={len\(channels\)}") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(PlantData) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(channels) Tj
+(=) Tj
+(channels) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(mean) Tj
+(=) Tj
+(mean) Tj
+(,) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 8 of 18) Tj ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 22 0 R >>
+endobj
+22 0 obj
+<< /Length 5644 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(        ) Tj
+(std) Tj
+(=) Tj
+(std) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(train_z) Tj
+(=) Tj
+(train_z) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(train_meta) Tj
+(=) Tj
+(train_meta) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(score_z) Tj
+(=) Tj
+(score_z) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(score_meta) Tj
+(=) Tj
+(score_meta) Tj
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+T*
+/F2 8 Tf
+(Code: src/miniproject/diagnose.py) Tj
+T*
+T*
+/F1 8 Tf
+(  ) Tj
+0.62 0.20 0.12 rg
+("""Per-channel contributions for SPE and the ridge score.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(Quoted rule:) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "For the SPE and ridge detectors, a statistic that is a sum of squares) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    splits naturally into one term per channel. That split is called a) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    contribution.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "SPE: the contribution of channel j is \(z_j - \(P P^T z\)_j\)^2.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "Ridge: the contribution of channel j is its squared standardized residual.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "For each fault and each of the two detectors, average the contributions) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    over every sample that is in alarm after sample 20, across the 20 runs.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    ... keeping the top five channels per fault and detector.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(A contribution plot points at where the fault shows up, which is not always) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(where it started.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(__future__) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(annotations) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(numpy) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pandas) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pd) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(config) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(FAULTS) Tj
+(, ) Tj
+(TOP_CHANNELS) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_top_from_average) Tj
+(\() Tj
+T*
+(  ) Tj
+(    ) Tj
+(fault) Tj
+(: ) Tj
+(int) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(detector) Tj
+(: ) Tj
+(str) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(average) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(channels) Tj
+(: ) Tj
+(list) Tj
+([) Tj
+(str) Tj
+(],) Tj
+T*
+(  ) Tj
+(\) -> ) Tj
+(list) Tj
+([) Tj
+(dict) Tj
+([) Tj
+(str) Tj
+(, ) Tj
+(object) Tj
+(]]:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Keep the five largest average contributions. Ties break on channel name.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(order) Tj
+( = ) Tj
+(sorted) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(range) Tj
+(\() Tj
+(len) Tj
+(\() Tj
+(channels) Tj
+(\)\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+(key) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(lambda) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(index) Tj
+(: \(-) Tj
+(float) Tj
+(\() Tj
+(average) Tj
+([) Tj
+(index) Tj
+(]\), ) Tj
+(channels) Tj
+([) Tj
+(index) Tj
+(]\),) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(rows) Tj
+( = []) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(rank) Tj
+(, ) Tj
+(index) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(enumerate) Tj
+(\() Tj
+(order) Tj
+([:) Tj
+(TOP_CHANNELS) Tj
+(], ) Tj
+(start) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+(rows) Tj
+(.) Tj
+(append) Tj
+(\() Tj
+T*
+(  ) Tj
+(            {) Tj
+T*
+(  ) Tj
+(                ) Tj
+0.62 0.20 0.12 rg
+("fault") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(fault) Tj
+(,) Tj
+T*
+(  ) Tj
+(                ) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(detector) Tj
+(,) Tj
+T*
+(  ) Tj
+(                ) Tj
+0.62 0.20 0.12 rg
+("rank") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(rank) Tj
+(,) Tj
+T*
+(  ) Tj
+(                ) Tj
+0.62 0.20 0.12 rg
+("channel") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(channels) Tj
+([) Tj
+(index) Tj
+(],) Tj
+T*
+(  ) Tj
+(                ) Tj
+0.62 0.20 0.12 rg
+("contribution") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(float) Tj
+(\() Tj
+(average) Tj
+([) Tj
+(index) Tj
+(]\),) Tj
+T*
+(  ) Tj
+(            }) Tj
+T*
+(  ) Tj
+(        \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(rows) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(spe_contribution_table) Tj
+(\() Tj
+T*
+(  ) Tj
+(    ) Tj
+(z) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(meta) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(reconstructed) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(alarms) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(channels) Tj
+(: ) Tj
+(list) Tj
+([) Tj
+(str) Tj
+(],) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 9 of 18) Tj ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 24 0 R >>
+endobj
+24 0 obj
+<< /Length 8281 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(\) -> ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Average SPE contributions on post-sample-20 alarming rows.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# One term per channel, as specified. Do not renormalize the row.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(contribution) Tj
+( = \() Tj
+(z) Tj
+( - ) Tj
+(reconstructed) Tj
+(\) ** ) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(frame) Tj
+( = ) Tj
+(meta) Tj
+(.) Tj
+(loc) Tj
+([:, [) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(]].) Tj
+(copy) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(frame) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("_row") Tj
+0.00 0.00 0.00 rg
+(] = ) Tj
+(np) Tj
+(.) Tj
+(arange) Tj
+(\() Tj
+(len) Tj
+(\() Tj
+(frame) Tj
+(\)\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(alarm_keys) Tj
+( = ) Tj
+(alarms) Tj
+(.) Tj
+(loc) Tj
+([) Tj
+(alarms) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("alarm") Tj
+0.00 0.00 0.00 rg
+(], [) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(]]) Tj
+T*
+(  ) Tj
+(    ) Tj
+(merged) Tj
+( = ) Tj
+(frame) Tj
+(.) Tj
+(merge) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(alarm_keys) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(on) Tj
+(=[) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(],) Tj
+T*
+(  ) Tj
+(        ) Tj
+(how) Tj
+(=) Tj
+0.62 0.20 0.12 rg
+("inner") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(merged) Tj
+( = ) Tj
+(merged) Tj
+([) Tj
+(merged) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(] > ) Tj
+0.05 0.40 0.50 rg
+(20) Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(rows) Tj
+(: ) Tj
+(list) Tj
+([) Tj
+(dict) Tj
+([) Tj
+(str) Tj
+(, ) Tj
+(object) Tj
+(]] = []) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(fault) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(FAULTS) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+(part) Tj
+( = ) Tj
+(merged) Tj
+([) Tj
+(merged) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(] == ) Tj
+(fault) Tj
+(]) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(part) Tj
+(.) Tj
+(empty) Tj
+(:) Tj
+T*
+(  ) Tj
+(            ) Tj
+(print) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("contributions  SPE fault {fault}: no alarming samples after sample 20") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(continue) Tj
+T*
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  ) Tj
+(        ) Tj
+(average) Tj
+( = ) Tj
+(contribution) Tj
+([) Tj
+(part) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("_row") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(to_numpy) Tj
+(\(\)].) Tj
+(mean) Tj
+(\() Tj
+(axis) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(rows) Tj
+(.) Tj
+(extend) Tj
+(\() Tj
+(_top_from_average) Tj
+(\() Tj
+(fault) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+(average) Tj
+(, ) Tj
+(channels) Tj
+(\)\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(rows) Tj
+(, ) Tj
+(columns) Tj
+(=[) Tj
+0.62 0.20 0.12 rg
+("fault") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("rank") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("channel") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("contribution") Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ridge_contribution_table) Tj
+(\() Tj
+T*
+(  ) Tj
+(    ) Tj
+(packed) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(alarms) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(channels) Tj
+(: ) Tj
+(list) Tj
+([) Tj
+(str) Tj
+(],) Tj
+T*
+(  ) Tj
+(\) -> ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Average ridge contributions on post-sample-20 alarming rows.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    `packed` carries one length-52 vector per scored row in `_contrib`.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(alarm_keys) Tj
+( = ) Tj
+(alarms) Tj
+(.) Tj
+(loc) Tj
+([) Tj
+(alarms) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("alarm") Tj
+0.00 0.00 0.00 rg
+(], [) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(]]) Tj
+T*
+(  ) Tj
+(    ) Tj
+(merged) Tj
+( = ) Tj
+(packed) Tj
+(.) Tj
+(merge) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(alarm_keys) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(on) Tj
+(=[) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(],) Tj
+T*
+(  ) Tj
+(        ) Tj
+(how) Tj
+(=) Tj
+0.62 0.20 0.12 rg
+("inner") Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(merged) Tj
+( = ) Tj
+(merged) Tj
+([) Tj
+(merged) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(] > ) Tj
+0.05 0.40 0.50 rg
+(20) Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(rows) Tj
+(: ) Tj
+(list) Tj
+([) Tj
+(dict) Tj
+([) Tj
+(str) Tj
+(, ) Tj
+(object) Tj
+(]] = []) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(fault) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(FAULTS) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+(part) Tj
+( = ) Tj
+(merged) Tj
+([) Tj
+(merged) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(] == ) Tj
+(fault) Tj
+(]) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(part) Tj
+(.) Tj
+(empty) Tj
+(:) Tj
+T*
+(  ) Tj
+(            ) Tj
+(print) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("contributions  ridge fault {fault}: no alarming samples after sample 20") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(continue) Tj
+T*
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  ) Tj
+(        ) Tj
+(stacked) Tj
+( = ) Tj
+(np) Tj
+(.) Tj
+(vstack) Tj
+(\() Tj
+(part) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("_contrib") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(to_list) Tj
+(\(\)\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(average) Tj
+( = ) Tj
+(stacked) Tj
+(.) Tj
+(mean) Tj
+(\() Tj
+(axis) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(rows) Tj
+(.) Tj
+(extend) Tj
+(\() Tj
+(_top_from_average) Tj
+(\() Tj
+(fault) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("ridge") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+(average) Tj
+(, ) Tj
+(channels) Tj
+(\)\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(rows) Tj
+(, ) Tj
+(columns) Tj
+(=[) Tj
+0.62 0.20 0.12 rg
+("fault") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("rank") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("channel") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("contribution") Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+T*
+/F2 8 Tf
+(Code: src/miniproject/evaluate.py) Tj
+T*
+T*
+/F1 8 Tf
+(  ) Tj
+0.62 0.20 0.12 rg
+("""Thresholds, three-sample alarms, and the detection table.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(Quoted rules:) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "For each of the three statistics \(T2, SPE, ridge\), the threshold is) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    numpy.quantile\(scores, 0.99\) over the validation runs, with NumPy's) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    default interpolation.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 10 of 18) Tj ET
+endstream
+endobj
+25 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 26 0 R >>
+endobj
+26 0 obj
+<< /Length 7813 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "A sample is in alarm when it and the two samples before it all exceed) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    the threshold. Alarms never cross a run boundary.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "false-alarm rate: the share of samples in alarm over the test runs,) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    reported as fault 0") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "detection rate: for each faulty run, the share of samples after sample) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    20 that are in alarm, averaged over the 20 runs") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "detection delay: for each faulty run, minutes from sample 20 to the) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    first alarm after it; report the median over the runs that alarmed,) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    and how many runs never alarmed.") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(The evaluation checks recompute this table from the team's own scores, so) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(the formulas here are the ones written back to results/detection.csv.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(__future__) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(annotations) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(numpy) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pandas) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pd) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(config) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(FAULTS) Tj
+(, ) Tj
+(QUANTILE) Tj
+(, ) Tj
+(SAMPLE_MINUTES) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(alarm_mask) Tj
+(\() Tj
+(samples) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+(, ) Tj
+(values) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+(, ) Tj
+(threshold) Tj
+(: ) Tj
+(float) Tj
+(\) -> ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Mark samples whose own score and the two previous samples all exceed the threshold.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    "Exceed" is strict: a score equal to the quantile is not an alarm.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    If sample s-1 or s-2 is missing, as with the first two ridge samples,) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    that row cannot alarm. The caller must pass a single run.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(above) Tj
+( = ) Tj
+(values) Tj
+( > ) Tj
+(threshold) Tj
+T*
+(  ) Tj
+(    ) Tj
+(by_sample) Tj
+( = {) Tj
+(int) Tj
+(\() Tj
+(sample) Tj
+(\): ) Tj
+(bool) Tj
+(\() Tj
+(flag) Tj
+(\) ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(sample) Tj
+(, ) Tj
+(flag) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(zip) Tj
+(\() Tj
+(samples) Tj
+(, ) Tj
+(above) Tj
+(\)}) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+(.) Tj
+(fromiter) Tj
+(\() Tj
+T*
+(  ) Tj
+(        \() Tj
+T*
+(  ) Tj
+(            ) Tj
+(by_sample) Tj
+(.) Tj
+(get) Tj
+(\() Tj
+(int) Tj
+(\() Tj
+(sample) Tj
+(\), ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(and) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(by_sample) Tj
+(.) Tj
+(get) Tj
+(\() Tj
+(int) Tj
+(\() Tj
+(sample) Tj
+(\) - ) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(and) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(by_sample) Tj
+(.) Tj
+(get) Tj
+(\() Tj
+(int) Tj
+(\() Tj
+(sample) Tj
+(\) - ) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(sample) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(samples) Tj
+T*
+(  ) Tj
+(        \),) Tj
+T*
+(  ) Tj
+(        ) Tj
+(dtype) Tj
+(=) Tj
+(bool) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(count) Tj
+(=) Tj
+(len) Tj
+(\() Tj
+(samples) Tj
+(\),) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(attach_alarms) Tj
+(\() Tj
+(scores) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(value_col) Tj
+(: ) Tj
+(str) Tj
+(, ) Tj
+(threshold) Tj
+(: ) Tj
+(float) Tj
+(\) -> ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Add an alarm column. The window is reset at every \(faultNumber, simulationRun\).""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(parts) Tj
+(: ) Tj
+(list) Tj
+([) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(] = []) Tj
+T*
+(  ) Tj
+(    ) Tj
+(grouped) Tj
+( = ) Tj
+(scores) Tj
+(.) Tj
+(groupby) Tj
+(\([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+(sort) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_) Tj
+(, ) Tj
+(part) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(grouped) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+(part) Tj
+( = ) Tj
+(part) Tj
+(.) Tj
+(sort_values) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+(kind) Tj
+(=) Tj
+0.62 0.20 0.12 rg
+("mergesort") Tj
+0.00 0.00 0.00 rg
+(\).) Tj
+(copy) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(part) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("alarm") Tj
+0.00 0.00 0.00 rg
+(] = ) Tj
+(alarm_mask) Tj
+(\() Tj
+T*
+(  ) Tj
+(            ) Tj
+(part) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(to_numpy) Tj
+(\(\),) Tj
+T*
+(  ) Tj
+(            ) Tj
+(part) Tj
+([) Tj
+(value_col) Tj
+(].) Tj
+(to_numpy) Tj
+(\() Tj
+(dtype) Tj
+(=) Tj
+(np) Tj
+(.) Tj
+(float64) Tj
+(\),) Tj
+T*
+(  ) Tj
+(            ) Tj
+(threshold) Tj
+(,) Tj
+T*
+(  ) Tj
+(        \)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(parts) Tj
+(.) Tj
+(append) Tj
+(\() Tj
+(part) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pd) Tj
+(.) Tj
+(concat) Tj
+(\() Tj
+(parts) Tj
+(, ) Tj
+(ignore_index) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(validation_threshold) Tj
+(\() Tj
+(scores) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(value_col) Tj
+(: ) Tj
+(str) Tj
+(\) -> ) Tj
+(float) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""99th percentile of fault-free validation runs 301 to 400.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    np.quantile is called with no method argument so the interpolation is) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    whatever NumPy's default is on this interpreter.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 11 of 18) Tj ET
+endstream
+endobj
+27 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 28 0 R >>
+endobj
+28 0 obj
+<< /Length 8906 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(    ) Tj
+(validation) Tj
+( = ) Tj
+(scores) Tj
+([) Tj
+T*
+(  ) Tj
+(        \() Tj
+(scores) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(] == ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(\) & \() Tj
+(scores) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(between) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(301) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(400) Tj
+0.00 0.00 0.00 rg
+(\)\)) Tj
+T*
+(  ) Tj
+(    ]) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(validation) Tj
+(.) Tj
+(empty) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ValueError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("No validation rows for {value_col}.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(float) Tj
+(\() Tj
+(np) Tj
+(.) Tj
+(quantile) Tj
+(\() Tj
+(validation) Tj
+([) Tj
+(value_col) Tj
+(].) Tj
+(to_numpy) Tj
+(\() Tj
+(dtype) Tj
+(=) Tj
+(np) Tj
+(.) Tj
+(float64) Tj
+(\), ) Tj
+(QUANTILE) Tj
+(\)\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(detection_rows) Tj
+(\() Tj
+(alarmed) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(detector) Tj
+(: ) Tj
+(str) Tj
+(\) -> ) Tj
+(list) Tj
+([) Tj
+(dict) Tj
+([) Tj
+(str) Tj
+(, ) Tj
+(object) Tj
+(]]:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""One fault-0 row plus faults 1 to 20 for a single detector.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    Fault 0 stores the false-alarm rate in detection_rate. Delay and) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    runs_missed are defined only "for each faulty run", so those two cells) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    are left empty on the fault-0 row.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(rows) Tj
+(: ) Tj
+(list) Tj
+([) Tj
+(dict) Tj
+([) Tj
+(str) Tj
+(, ) Tj
+(object) Tj
+(]] = []) Tj
+T*
+(  ) Tj
+(    ) Tj
+(test) Tj
+( = ) Tj
+(alarmed) Tj
+([) Tj
+T*
+(  ) Tj
+(        \() Tj
+(alarmed) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(] == ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(\) & \() Tj
+(alarmed) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(between) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(401) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(500) Tj
+0.00 0.00 0.00 rg
+(\)\)) Tj
+T*
+(  ) Tj
+(    ]) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(test) Tj
+(.) Tj
+(empty) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ValueError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("No test rows for {detector}.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# "the share of samples in alarm over the test runs") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(rows) Tj
+(.) Tj
+(append) Tj
+(\() Tj
+T*
+(  ) Tj
+(        {) Tj
+T*
+(  ) Tj
+(            ) Tj
+0.62 0.20 0.12 rg
+("fault") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(            ) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(detector) Tj
+(,) Tj
+T*
+(  ) Tj
+(            ) Tj
+0.62 0.20 0.12 rg
+("detection_rate") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(float) Tj
+(\() Tj
+(test) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("alarm") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(mean) Tj
+(\(\)\),) Tj
+T*
+(  ) Tj
+(            ) Tj
+0.62 0.20 0.12 rg
+("median_delay_min") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(np) Tj
+(.) Tj
+(nan) Tj
+(,) Tj
+T*
+(  ) Tj
+(            ) Tj
+0.62 0.20 0.12 rg
+("runs_missed") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(np) Tj
+(.) Tj
+(nan) Tj
+(,) Tj
+T*
+(  ) Tj
+(        }) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(fault) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(FAULTS) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+(sub) Tj
+( = ) Tj
+(alarmed) Tj
+([) Tj
+(alarmed) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(] == ) Tj
+(fault) Tj
+(]) Tj
+T*
+(  ) Tj
+(        ) Tj
+(runs) Tj
+( = ) Tj
+(sorted) Tj
+(\() Tj
+(int) Tj
+(\() Tj
+(run) Tj
+(\) ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(run) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(sub) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(unique) Tj
+(\(\)\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(len) Tj
+(\() Tj
+(runs) Tj
+(\) != ) Tj
+0.05 0.40 0.50 rg
+(20) Tj
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ValueError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("Fault {fault} has {len\(runs\)} runs, expected 20.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(per_run_rate) Tj
+(: ) Tj
+(list) Tj
+([) Tj
+(float) Tj
+(] = []) Tj
+T*
+(  ) Tj
+(        ) Tj
+(delays) Tj
+(: ) Tj
+(list) Tj
+([) Tj
+(float) Tj
+(] = []) Tj
+T*
+(  ) Tj
+(        ) Tj
+(missed) Tj
+( = ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(run) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(runs) Tj
+(:) Tj
+T*
+(  ) Tj
+(            ) Tj
+(part) Tj
+( = ) Tj
+(sub) Tj
+([) Tj
+(sub) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(] == ) Tj
+(run) Tj
+(]) Tj
+T*
+(  ) Tj
+(            ) Tj
+0.35 0.48 0.38 rg
+(# "the share of samples after sample 20 that are in alarm") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(            ) Tj
+(after) Tj
+( = ) Tj
+(part) Tj
+([) Tj
+(part) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(] > ) Tj
+0.05 0.40 0.50 rg
+(20) Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(after) Tj
+(.) Tj
+(empty) Tj
+(:) Tj
+T*
+(  ) Tj
+(                ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ValueError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("Fault {fault} run {run} has no samples after 20.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(            ) Tj
+(per_run_rate) Tj
+(.) Tj
+(append) Tj
+(\() Tj
+(float) Tj
+(\() Tj
+(after) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("alarm") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(mean) Tj
+(\(\)\)\)) Tj
+T*
+(  ) Tj
+(            ) Tj
+(hit) Tj
+( = ) Tj
+(after) Tj
+(.) Tj
+(loc) Tj
+([) Tj
+(after) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("alarm") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(hit) Tj
+(.) Tj
+(empty) Tj
+(:) Tj
+T*
+(  ) Tj
+(                ) Tj
+(missed) Tj
+( += ) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(                ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(continue) Tj
+T*
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(  ) Tj
+(            ) Tj
+0.35 0.48 0.38 rg
+(# "minutes from sample 20 to the first alarm after it") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(            ) Tj
+0.35 0.48 0.38 rg
+(# Sample 21 is one step \(3 minutes\) after sample 20.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(            ) Tj
+(first) Tj
+( = ) Tj
+(int) Tj
+(\() Tj
+(hit) Tj
+(.) Tj
+(min) Tj
+(\(\)\)) Tj
+T*
+(  ) Tj
+(            ) Tj
+(delays) Tj
+(.) Tj
+(append) Tj
+(\() Tj
+(float) Tj
+(\(\() Tj
+(first) Tj
+( - ) Tj
+0.05 0.40 0.50 rg
+(20) Tj
+0.00 0.00 0.00 rg
+(\) * ) Tj
+(SAMPLE_MINUTES) Tj
+(\)\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(rows) Tj
+(.) Tj
+(append) Tj
+(\() Tj
+T*
+(  ) Tj
+(            {) Tj
+T*
+(  ) Tj
+(                ) Tj
+0.62 0.20 0.12 rg
+("fault") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(fault) Tj
+(,) Tj
+T*
+(  ) Tj
+(                ) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(detector) Tj
+(,) Tj
+T*
+(  ) Tj
+(                ) Tj
+0.62 0.20 0.12 rg
+("detection_rate") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(float) Tj
+(\() Tj
+(np) Tj
+(.) Tj
+(mean) Tj
+(\() Tj
+(per_run_rate) Tj
+(\)\),) Tj
+T*
+(  ) Tj
+(                ) Tj
+0.62 0.20 0.12 rg
+("median_delay_min") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(float) Tj
+(\() Tj
+(np) Tj
+(.) Tj
+(median) Tj
+(\() Tj
+(delays) Tj
+(\)\) ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(delays) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(else) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+(.) Tj
+(nan) Tj
+(,) Tj
+T*
+(  ) Tj
+(                ) Tj
+0.62 0.20 0.12 rg
+("runs_missed") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(int) Tj
+(\() Tj
+(missed) Tj
+(\),) Tj
+T*
+(  ) Tj
+(            }) Tj
+T*
+(  ) Tj
+(        \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(rows) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 12 of 18) Tj ET
+endstream
+endobj
+29 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 30 0 R >>
+endobj
+30 0 obj
+<< /Length 7243 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(build_thresholds_and_detection) Tj
+(\() Tj
+T*
+(  ) Tj
+(    ) Tj
+(pca_scores) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_scores) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(\) -> ) Tj
+(tuple) Tj
+([) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(dict) Tj
+([) Tj
+(str) Tj
+(, ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(]]:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Thresholds, the detection table, and alarmed frames for diagnosis.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(specs) Tj
+( = \() Tj
+T*
+(  ) Tj
+(        \() Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+(pca_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(\),) Tj
+T*
+(  ) Tj
+(        \() Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+(pca_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(\),) Tj
+T*
+(  ) Tj
+(        \() Tj
+0.62 0.20 0.12 rg
+("ridge") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+(ridge_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("score") Tj
+0.00 0.00 0.00 rg
+(\),) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(threshold_rows) Tj
+( = []) Tj
+T*
+(  ) Tj
+(    ) Tj
+(detection) Tj
+(: ) Tj
+(list) Tj
+([) Tj
+(dict) Tj
+([) Tj
+(str) Tj
+(, ) Tj
+(object) Tj
+(]] = []) Tj
+T*
+(  ) Tj
+(    ) Tj
+(alarmed) Tj
+(: ) Tj
+(dict) Tj
+([) Tj
+(str) Tj
+(, ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(] = {}) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(detector) Tj
+(, ) Tj
+(frame) Tj
+(, ) Tj
+(column) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(specs) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+(threshold) Tj
+( = ) Tj
+(validation_threshold) Tj
+(\() Tj
+(frame) Tj
+(, ) Tj
+(column) Tj
+(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(threshold_rows) Tj
+(.) Tj
+(append) Tj
+(\({) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(detector) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("threshold") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(threshold) Tj
+(}\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(marked) Tj
+( = ) Tj
+(attach_alarms) Tj
+(\() Tj
+(frame) Tj
+(, ) Tj
+(column) Tj
+(, ) Tj
+(threshold) Tj
+(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(alarmed) Tj
+([) Tj
+(detector) Tj
+(] = ) Tj
+(marked) Tj
+T*
+(  ) Tj
+(        ) Tj
+(detection) Tj
+(.) Tj
+(extend) Tj
+(\() Tj
+(detection_rows) Tj
+(\() Tj
+(marked) Tj
+(, ) Tj
+(detector) Tj
+(\)\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(print) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("threshold  {detector:5s}  {threshold:.6g}") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(thresholds) Tj
+( = ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(\() Tj
+(threshold_rows) Tj
+(, ) Tj
+(columns) Tj
+(=[) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("threshold") Tj
+0.00 0.00 0.00 rg
+(]\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(detection_frame) Tj
+( = ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(\() Tj
+(detection) Tj
+(\)[) Tj
+T*
+(  ) Tj
+(        [) Tj
+0.62 0.20 0.12 rg
+("fault") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("detection_rate") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("median_delay_min") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("runs_missed") Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+(    ]) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(thresholds) Tj
+(, ) Tj
+(detection_frame) Tj
+(, ) Tj
+(alarmed) Tj
+T*
+T*
+/F2 8 Tf
+(Code: src/miniproject/pca_monitor.py) Tj
+T*
+T*
+/F1 8 Tf
+(  ) Tj
+0.62 0.20 0.12 rg
+("""PCA monitor: T2 inside the normal pattern, SPE outside it.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(Quoted recipe:) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    1. Standardize the training data. Compute the principal components of its) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(       covariance matrix \(on standardized data this is the correlation matrix\).) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    2. Keep the smallest number of components k whose eigenvalues add up to) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(       at least 90% of the total.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    3. For each standardized row z, with P the k retained loading vectors and) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(       lambda_i their eigenvalues:) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(           t = P^T z) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(           T^2 = sum_{i=1}^{k} t_i^2 / lambda_i) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(           SPE = || z - P P^T z ||^2) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(The assignment also says sklearn.decomposition.PCA gives the same model:) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(fit on the standardized training data, use explained_variance_ for lambda_i,) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(and inverse_transform\(transform\(z\)\) for P P^T z. This file follows that model) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(with svd_solver="full", so the components are the exact eigenvectors rather) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(than a randomized approximation.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(T2 asks: "Is it unusual within the normal pattern?") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(SPE asks: "Is it unusual outside the normal pattern?") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(__future__) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(annotations) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(numpy) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pandas) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pd) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(sklearn) Tj
+(.) Tj
+(decomposition) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(PCA) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(config) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(PCA_VARIANCE) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(fit_pca) Tj
+(\() Tj
+(train_z) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+(\) -> ) Tj
+(tuple) Tj
+([) Tj
+(PCA) Tj
+(, ) Tj
+(int) Tj
+(]:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Fit PCA on standardized training rows and choose k at 90% variance.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    train_z must already be standardized with the training mean and std.) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 13 of 18) Tj ET
+endstream
+endobj
+31 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 32 0 R >>
+endobj
+32 0 obj
+<< /Length 8408 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+0.62 0.20 0.12 rg
+(    Its column mean is then zero, so a second centering inside PCA does not) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    move the loadings. k is the smallest count with cumulative eigenvalue) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    mass at least 0.90. searchsorted\(..., side="left"\) implements "at least":) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    an eigenvalue that lands exactly on 90% is kept.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(train_z) Tj
+(.) Tj
+(ndim) Tj
+( != ) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ValueError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("train_z must be a 2-d array of standardized rows.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(model) Tj
+( = ) Tj
+(PCA) Tj
+(\() Tj
+(svd_solver) Tj
+(=) Tj
+0.62 0.20 0.12 rg
+("full") Tj
+0.00 0.00 0.00 rg
+(\).) Tj
+(fit) Tj
+(\() Tj
+(train_z) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(cumulative) Tj
+( = ) Tj
+(np) Tj
+(.) Tj
+(cumsum) Tj
+(\() Tj
+(model) Tj
+(.) Tj
+(explained_variance_ratio_) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(k) Tj
+( = ) Tj
+(int) Tj
+(\() Tj
+(np) Tj
+(.) Tj
+(searchsorted) Tj
+(\() Tj
+(cumulative) Tj
+(, ) Tj
+(PCA_VARIANCE) Tj
+(, ) Tj
+(side) Tj
+(=) Tj
+0.62 0.20 0.12 rg
+("left") Tj
+0.00 0.00 0.00 rg
+(\) + ) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(k) Tj
+( < ) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(or) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(k) Tj
+( > ) Tj
+(train_z) Tj
+(.) Tj
+(shape) Tj
+([) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(]:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("PCA retained an impossible k={k}.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# Guard the "smallest k" claim: k-1 components, if any, are not enough.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(k) Tj
+( > ) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(and) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(cumulative) Tj
+([) Tj
+(k) Tj
+( - ) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+0.00 0.00 0.00 rg
+(] >= ) Tj
+(PCA_VARIANCE) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("k is not the smallest 90% cutoff.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(print) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("PCA  k={k}  variance={cumulative[k - 1]:.4f}  ") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(        ) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("of {train_z.shape[1]} channels") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(model) Tj
+(, ) Tj
+(k) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(score_pca) Tj
+(\() Tj
+(model) Tj
+(: ) Tj
+(PCA) Tj
+(, ) Tj
+(k) Tj
+(: ) Tj
+(int) Tj
+(, ) Tj
+(z) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+(, ) Tj
+(meta) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(\) -> ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Score every supplied row. Caller must pass only validation, test, and faulty rows.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    Quoted output: results/scores_pca.parquet with columns) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    faultNumber, simulationRun, sample, T2, SPE.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# components_ rows are the loading vectors. P in the recipe is those) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# vectors as columns, so P^T z is z @ components_[:k].T.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(components) Tj
+( = ) Tj
+(model) Tj
+(.) Tj
+(components_) Tj
+([:) Tj
+(k) Tj
+(]) Tj
+T*
+(  ) Tj
+(    ) Tj
+(lam) Tj
+( = ) Tj
+(model) Tj
+(.) Tj
+(explained_variance_) Tj
+([:) Tj
+(k) Tj
+(]) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+(.) Tj
+(any) Tj
+(\() Tj
+(lam) Tj
+( <= ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("A retained PCA eigenvalue is not positive.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# Training rows were centered before PCA, and PCA subtracts that mean) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# again inside transform. The recipe's z is the standardized row, whose) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# training mean is zero. Project z directly so SPE matches) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# ||z - P P^T z||^2 and not a second recentering.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(scores) Tj
+( = ) Tj
+(z) Tj
+( @ ) Tj
+(components) Tj
+(.) Tj
+(T) Tj
+T*
+(  ) Tj
+(    ) Tj
+(reconstructed) Tj
+( = ) Tj
+(scores) Tj
+( @ ) Tj
+(components) Tj
+T*
+(  ) Tj
+(    ) Tj
+(t2) Tj
+( = ) Tj
+(np) Tj
+(.) Tj
+(sum) Tj
+(\() Tj
+(scores) Tj
+(**) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+0.00 0.00 0.00 rg
+( / ) Tj
+(lam) Tj
+(, ) Tj
+(axis) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(spe) Tj
+( = ) Tj
+(np) Tj
+(.) Tj
+(sum) Tj
+(\(\() Tj
+(z) Tj
+( - ) Tj
+(reconstructed) Tj
+(\) ** ) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+(axis) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(out) Tj
+( = ) Tj
+(meta) Tj
+(.) Tj
+(loc) Tj
+([:, [) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(]].) Tj
+(copy) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(out) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(] = ) Tj
+(t2) Tj
+T*
+(  ) Tj
+(    ) Tj
+(out) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(] = ) Tj
+(spe) Tj
+T*
+(  ) Tj
+(    ) Tj
+(out) Tj
+( = ) Tj
+(out) Tj
+(.) Tj
+(sort_values) Tj
+(\([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+(kind) Tj
+(=) Tj
+0.62 0.20 0.12 rg
+("mergesort") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(out) Tj
+( = ) Tj
+(out) Tj
+(.) Tj
+(reset_index) Tj
+(\() Tj
+(drop) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(out) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(reconstruction) Tj
+(\() Tj
+(model) Tj
+(: ) Tj
+(PCA) Tj
+(, ) Tj
+(k) Tj
+(: ) Tj
+(int) Tj
+(, ) Tj
+(z) Tj
+(: ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+(\) -> ) Tj
+(np) Tj
+(.) Tj
+(ndarray) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Return P P^T z for contribution plots.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    SPE contribution of channel j is \(z_j - \(P P^T z\)_j\)^2.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(components) Tj
+( = ) Tj
+(model) Tj
+(.) Tj
+(components_) Tj
+([:) Tj
+(k) Tj
+(]) Tj
+T*
+(  ) Tj
+(    ) Tj
+(scores) Tj
+( = ) Tj
+(z) Tj
+( @ ) Tj
+(components) Tj
+(.) Tj
+(T) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(scores) Tj
+( @ ) Tj
+(components) Tj
+T*
+T*
+/F2 8 Tf
+(Code: src/miniproject/pipeline.py) Tj
+T*
+T*
+/F1 8 Tf
+(  ) Tj
+0.62 0.20 0.12 rg
+("""Run the whole project except the evidence script.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(The recipe, in order:) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 14 of 18) Tj ET
+endstream
+endobj
+33 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 34 0 R >>
+endobj
+34 0 obj
+<< /Length 8809 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+0.62 0.20 0.12 rg
+(    1. Check SHA256 of the files in data/.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    2. Standardize with the training mean and std \(ddof=1\) from fault-free runs 1-300.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    3. Score every validation, test, and faulty row.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    4. Set each threshold with numpy.quantile\(validation scores, 0.99\).) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    5. Alarm only when a sample and the two samples before it all exceed the threshold.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    6. Write the detection table, the contribution table, the figure, and REPORT.pdf.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(Quoted outputs:) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    results/scores_pca.parquet) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    results/scores_ridge.parquet) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    results/thresholds.csv) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    results/detection.csv) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    results/contributions.csv) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    REPORT.pdf) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(__future__) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(annotations) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(numpy) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pandas) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(as) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pd) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(config) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RESULTS_DIR) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(data) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(load_plant) Tj
+(, ) Tj
+(verify_checksums) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(diagnose) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(ridge_contribution_table) Tj
+(, ) Tj
+(spe_contribution_table) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(evaluate) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( \() Tj
+T*
+(  ) Tj
+(    ) Tj
+(alarm_mask) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(build_thresholds_and_detection) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(validation_threshold) Tj
+(,) Tj
+T*
+(  ) Tj
+(\)) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(pca_monitor) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(fit_pca) Tj
+(, ) Tj
+(reconstruction) Tj
+(, ) Tj
+(score_pca) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(plots) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(plot_fault_run) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(report) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pick_plot_fault) Tj
+(, ) Tj
+(write_report) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(from) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(miniproject) Tj
+(.) Tj
+(ridge_monitor) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(import) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(fit_ridge) Tj
+(, ) Tj
+(score_ridge) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_check_alarm_rule) Tj
+(\(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""The three-sample rule, including a missing sample that must not alarm.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(dense) Tj
+( = ) Tj
+(alarm_mask) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(np) Tj
+(.) Tj
+(array) Tj
+(\([) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(3) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(4) Tj
+0.00 0.00 0.00 rg
+(]\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+(np) Tj
+(.) Tj
+(array) Tj
+(\([) Tj
+0.05 0.40 0.50 rg
+(5.0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(5.0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(5.0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(0.0) Tj
+0.00 0.00 0.00 rg
+(]\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+0.05 0.40 0.50 rg
+(1.0) Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(dense) Tj
+(.) Tj
+(tolist) Tj
+(\(\) != [) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(]:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Alarm rule failed on a complete run.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# Sample 2 is absent, so sample 4 does not have two preceding scores.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(sparse) Tj
+( = ) Tj
+(alarm_mask) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(np) Tj
+(.) Tj
+(array) Tj
+(\([) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(3) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(4) Tj
+0.00 0.00 0.00 rg
+(]\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+(np) Tj
+(.) Tj
+(array) Tj
+(\([) Tj
+0.05 0.40 0.50 rg
+(5.0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(5.0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(5.0) Tj
+0.00 0.00 0.00 rg
+(]\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+0.05 0.40 0.50 rg
+(1.0) Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(sparse) Tj
+(.) Tj
+(tolist) Tj
+(\(\) != [) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(]:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Alarm rule crossed a missing sample.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_write_csv) Tj
+(\() Tj
+(frame) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(path) Tj
+(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Enough digits that a later read-back matches the in-memory floats.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(frame) Tj
+(.) Tj
+(to_csv) Tj
+(\() Tj
+(path) Tj
+(, ) Tj
+(index) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+(float_format) Tj
+(=) Tj
+0.62 0.20 0.12 rg
+("%.17g") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_cast_keys) Tj
+(\() Tj
+(frame) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(\) -> ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+(out) Tj
+( = ) Tj
+(frame) Tj
+(.) Tj
+(copy) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(column) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( \() Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+(out) Tj
+([) Tj
+(column) Tj
+(] = ) Tj
+(out) Tj
+([) Tj
+(column) Tj
+(].) Tj
+(astype) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("int64") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(return) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(out) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 15 of 18) Tj ET
+endstream
+endobj
+35 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 36 0 R >>
+endobj
+36 0 obj
+<< /Length 10111 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_assert_score_rows) Tj
+(\() Tj
+(pca_scores) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(ridge_scores) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Every required row scored, and no others.""") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(len) Tj
+(\() Tj
+(pca_scores) Tj
+(\) != 300) Tj
+(_000) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("PCA score file has {len\(pca_scores\)} rows, expected 300000.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# Each of 600 scored runs drops its first two samples.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(len) Tj
+(\() Tj
+(ridge_scores) Tj
+(\) != 298) Tj
+(_800) Tj
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("Ridge score file has {len\(ridge_scores\)} rows, expected 298800.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(free) Tj
+( = ) Tj
+(pca_scores) Tj
+([) Tj
+(pca_scores) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(] == ) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(int) Tj
+(\() Tj
+(free) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(min) Tj
+(\(\)\) != ) Tj
+0.05 0.40 0.50 rg
+(301) Tj
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(or) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(int) Tj
+(\() Tj
+(free) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(max) Tj
+(\(\)\) != ) Tj
+0.05 0.40 0.50 rg
+(500) Tj
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Fault-free PCA scores are not runs 301 to 500.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(set) Tj
+(\() Tj
+(ridge_scores) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(unique) Tj
+(\(\)\).) Tj
+(issuperset) Tj
+(\({) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(2) Tj
+0.00 0.00 0.00 rg
+(}\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Ridge scores include sample 1 or 2, which have no t-2.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(frame) Tj
+(, ) Tj
+(name) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( \(\() Tj
+(pca_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("PCA") Tj
+0.00 0.00 0.00 rg
+(\), \() Tj
+(ridge_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("ridge") Tj
+0.00 0.00 0.00 rg
+(\)\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(frame) Tj
+(.) Tj
+(duplicated) Tj
+(\([) Tj
+0.62 0.20 0.12 rg
+("faultNumber") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("simulationRun") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("sample") Tj
+0.00 0.00 0.00 rg
+(]\).) Tj
+(any) Tj
+(\(\):) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("{name} scores have duplicate keys.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_assert_tables_match_scores) Tj
+(\() Tj
+T*
+(  ) Tj
+(    ) Tj
+(pca_scores) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_scores) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(thresholds) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(    ) Tj
+(detection) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(,) Tj
+T*
+(  ) Tj
+(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Recompute the 99th percentiles from the score frames about to be saved.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    The evaluation check does this from the team's own scores, so a threshold) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    that is not that percentile would fail even when the detector is right.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(expected) Tj
+( = {) Tj
+T*
+(  ) Tj
+(        ) Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(validation_threshold) Tj
+(\() Tj
+(pca_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(validation_threshold) Tj
+(\() Tj
+(pca_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+0.62 0.20 0.12 rg
+("ridge") Tj
+0.00 0.00 0.00 rg
+(: ) Tj
+(validation_threshold) Tj
+(\() Tj
+(ridge_scores) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("score") Tj
+0.00 0.00 0.00 rg
+(\),) Tj
+T*
+(  ) Tj
+(    }) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_) Tj
+(, ) Tj
+(row) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(thresholds) Tj
+(.) Tj
+(iterrows) Tj
+(\(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+(got) Tj
+( = ) Tj
+(float) Tj
+(\() Tj
+(row) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("threshold") Tj
+0.00 0.00 0.00 rg
+(]\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(got) Tj
+( != ) Tj
+(expected) Tj
+([) Tj
+(row) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(]]:) Tj
+T*
+(  ) Tj
+(            ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("Threshold for {row['detector']} does not match quantile.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(len) Tj
+(\() Tj
+(detection) Tj
+(\) != ) Tj
+0.05 0.40 0.50 rg
+(63) Tj
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("detection.csv must have 21 rows for each of 3 detectors.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(faults) Tj
+( = ) Tj
+(set) Tj
+(\() Tj
+(detection) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("fault") Tj
+0.00 0.00 0.00 rg
+(].) Tj
+(astype) Tj
+(\() Tj
+(int) Tj
+(\)\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(faults) Tj
+( != ) Tj
+(set) Tj
+(\() Tj
+(range) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(21) Tj
+0.00 0.00 0.00 rg
+(\)\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("detection.csv is missing a fault from 0 to 20.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(run) Tj
+(\(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.62 0.20 0.12 rg
+("""Fit, score, evaluate, diagnose, and write the report.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+T*
+(  ) Tj
+0.62 0.20 0.12 rg
+(    Does not call the course evidence script.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+0.62 0.20 0.12 rg
+(    """) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(_check_alarm_rule) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(verify_checksums) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(plant) Tj
+( = ) Tj
+(load_plant) Tj
+(\(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(model) Tj
+(, ) Tj
+(k) Tj
+( = ) Tj
+(fit_pca) Tj
+(\() Tj
+(plant) Tj
+(.) Tj
+(train_z) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(cumulative) Tj
+( = ) Tj
+(np) Tj
+(.) Tj
+(cumsum) Tj
+(\() Tj
+(model) Tj
+(.) Tj
+(explained_variance_ratio_) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(variance) Tj
+( = ) Tj
+(float) Tj
+(\() Tj
+(cumulative) Tj
+([) Tj
+(k) Tj
+( - ) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(]\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(pca_scores) Tj
+( = ) Tj
+(_cast_keys) Tj
+(\() Tj
+(score_pca) Tj
+(\() Tj
+(model) Tj
+(, ) Tj
+(k) Tj
+(, ) Tj
+(plant) Tj
+(.) Tj
+(score_z) Tj
+(, ) Tj
+(plant) Tj
+(.) Tj
+(score_meta) Tj
+(\)\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(reconstructed) Tj
+( = ) Tj
+(reconstruction) Tj
+(\() Tj
+(model) Tj
+(, ) Tj
+(k) Tj
+(, ) Tj
+(plant) Tj
+(.) Tj
+(score_z) Tj
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_model) Tj
+(, ) Tj
+(resid_std) Tj
+( = ) Tj
+(fit_ridge) Tj
+(\() Tj
+(plant) Tj
+(.) Tj
+(train_z) Tj
+(, ) Tj
+(plant) Tj
+(.) Tj
+(train_meta) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# The recipe checks that the code contains a ridge fit. This is that fit.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(not) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(hasattr) Tj
+(\() Tj
+(ridge_model) Tj
+(, ) Tj
+0.62 0.20 0.12 rg
+("coef_") Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("Ridge model was not fit.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_scores) Tj
+(, ) Tj
+(ridge_contrib) Tj
+( = ) Tj
+(score_ridge) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(ridge_model) Tj
+(, ) Tj
+(resid_std) Tj
+(, ) Tj
+(plant) Tj
+(.) Tj
+(score_z) Tj
+(, ) Tj
+(plant) Tj
+(.) Tj
+(score_meta) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_scores) Tj
+( = ) Tj
+(_cast_keys) Tj
+(\() Tj
+(ridge_scores) Tj
+(\)) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 16 of 18) Tj ET
+endstream
+endobj
+37 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 38 0 R >>
+endobj
+38 0 obj
+<< /Length 8361 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(    ) Tj
+(_assert_score_rows) Tj
+(\() Tj
+(pca_scores) Tj
+(, ) Tj
+(ridge_scores) Tj
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(thresholds) Tj
+(, ) Tj
+(detection) Tj
+(, ) Tj
+(alarmed) Tj
+( = ) Tj
+(build_thresholds_and_detection) Tj
+(\() Tj
+(pca_scores) Tj
+(, ) Tj
+(ridge_scores) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(_assert_tables_match_scores) Tj
+(\() Tj
+(pca_scores) Tj
+(, ) Tj
+(ridge_scores) Tj
+(, ) Tj
+(thresholds) Tj
+(, ) Tj
+(detection) Tj
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(spe_table) Tj
+( = ) Tj
+(spe_contribution_table) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(plant) Tj
+(.) Tj
+(score_z) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(plant) Tj
+(.) Tj
+(score_meta) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(reconstructed) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(alarmed) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(],) Tj
+T*
+(  ) Tj
+(        ) Tj
+(plant) Tj
+(.) Tj
+(channels) Tj
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_table) Tj
+( = ) Tj
+(ridge_contribution_table) Tj
+(\() Tj
+(ridge_contrib) Tj
+(, ) Tj
+(alarmed) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("ridge") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+(plant) Tj
+(.) Tj
+(channels) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(contributions) Tj
+( = ) Tj
+(pd) Tj
+(.) Tj
+(concat) Tj
+(\([) Tj
+(spe_table) Tj
+(, ) Tj
+(ridge_table) Tj
+(], ) Tj
+(ignore_index) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(contributions) Tj
+( = ) Tj
+(contributions) Tj
+(.) Tj
+(sort_values) Tj
+(\() Tj
+T*
+(  ) Tj
+(        [) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("fault") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("rank") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+(kind) Tj
+(=) Tj
+0.62 0.20 0.12 rg
+("mergesort") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    \).) Tj
+(reset_index) Tj
+(\() Tj
+(drop) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(RESULTS_DIR) Tj
+(.) Tj
+(mkdir) Tj
+(\() Tj
+(parents) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(, ) Tj
+(exist_ok) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(True) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(pca_path) Tj
+( = ) Tj
+(RESULTS_DIR) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("scores_pca.parquet") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(ridge_path) Tj
+( = ) Tj
+(RESULTS_DIR) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("scores_ridge.parquet") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(pca_scores) Tj
+(.) Tj
+(to_parquet) Tj
+(\() Tj
+(pca_path) Tj
+(, ) Tj
+(index) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(ridge_scores) Tj
+(.) Tj
+(to_parquet) Tj
+(\() Tj
+(ridge_path) Tj
+(, ) Tj
+(index) Tj
+(=) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(False) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(_write_csv) Tj
+(\() Tj
+(thresholds) Tj
+(, ) Tj
+(RESULTS_DIR) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("thresholds.csv") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(_write_csv) Tj
+(\() Tj
+(detection) Tj
+(, ) Tj
+(RESULTS_DIR) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("detection.csv") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(_write_csv) Tj
+(\() Tj
+(contributions) Tj
+(, ) Tj
+(RESULTS_DIR) Tj
+( / ) Tj
+0.62 0.20 0.12 rg
+("contributions.csv") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+0.35 0.48 0.38 rg
+(# Read the parquet back. This is our check, not the course evidence script.) Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(    ) Tj
+(reloaded) Tj
+( = ) Tj
+(pd) Tj
+(.) Tj
+(read_parquet) Tj
+(\() Tj
+(pca_path) Tj
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(not) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(np) Tj
+(.) Tj
+(allclose) Tj
+(\() Tj
+(reloaded) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+(pca_scores) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+(rtol) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+(atol) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(raise) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(RuntimeError) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("PCA parquet did not round-trip.") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+(    ) Tj
+(figure) Tj
+( = ) Tj
+(plot_fault_run) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(pca_scores) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(ridge_scores) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(dict) Tj
+(\() Tj
+(zip) Tj
+(\() Tj
+(thresholds) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(], ) Tj
+(thresholds) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("threshold") Tj
+0.00 0.00 0.00 rg
+(]\)\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+(fault) Tj
+(=) Tj
+(pick_plot_fault) Tj
+(\() Tj
+(detection) Tj
+(\),) Tj
+T*
+(  ) Tj
+(        ) Tj
+(run) Tj
+(=) Tj
+0.05 0.40 0.50 rg
+(1) Tj
+0.00 0.00 0.00 rg
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(write_report) Tj
+(\() Tj
+T*
+(  ) Tj
+(        ) Tj
+(detection) Tj
+(=) Tj
+(detection) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(thresholds) Tj
+(=) Tj
+(thresholds) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(contributions) Tj
+(=) Tj
+(contributions) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(figure) Tj
+(=) Tj
+(figure) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(k) Tj
+(=) Tj
+(k) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(variance) Tj
+(=) Tj
+(variance) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(pca_scores) Tj
+(=) Tj
+(pca_scores) Tj
+(,) Tj
+T*
+(  ) Tj
+(        ) Tj
+(ridge_scores) Tj
+(=) Tj
+(ridge_scores) Tj
+(,) Tj
+T*
+(  ) Tj
+(    \)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(_print_summary) Tj
+(\() Tj
+(detection) Tj
+(, ) Tj
+(k) Tj
+(, ) Tj
+(variance) Tj
+(\)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(def) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(_print_summary) Tj
+(\() Tj
+(detection) Tj
+(: ) Tj
+(pd) Tj
+(.) Tj
+(DataFrame) Tj
+(, ) Tj
+(k) Tj
+(: ) Tj
+(int) Tj
+(, ) Tj
+(variance) Tj
+(: ) Tj
+(float) Tj
+(\) -> ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(None) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+(print) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("\\nPCA k={k}  retained variance={variance:.4f}") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+(print) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("fault  T2_rate  SPE_rate  ridge_rate  T2_miss  SPE_miss  ridge_miss") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(    ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(fault) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(range) Tj
+(\() Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.05 0.40 0.50 rg
+(21) Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(        ) Tj
+(cells) Tj
+( = []) Tj
+T*
+(  ) Tj
+(        ) Tj
+(misses) Tj
+( = []) Tj
+T*
+(  ) Tj
+(        ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(for) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(detector) Tj
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(in) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( \() Tj
+0.62 0.20 0.12 rg
+("T2") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("SPE") Tj
+0.00 0.00 0.00 rg
+(, ) Tj
+0.62 0.20 0.12 rg
+("ridge") Tj
+0.00 0.00 0.00 rg
+(\):) Tj
+T*
+(  ) Tj
+(            ) Tj
+(row) Tj
+( = ) Tj
+(detection) Tj
+([) Tj
+T*
+(  ) Tj
+(                \() Tj
+(detection) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("fault") Tj
+0.00 0.00 0.00 rg
+(] == ) Tj
+(fault) Tj
+(\) & \() Tj
+(detection) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("detector") Tj
+0.00 0.00 0.00 rg
+(] == ) Tj
+(detector) Tj
+(\)) Tj
+T*
+(  ) Tj
+(            ].) Tj
+(iloc) Tj
+([) Tj
+0.05 0.40 0.50 rg
+(0) Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+(            ) Tj
+(cells) Tj
+(.) Tj
+(append) Tj
+(\() Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("{row['detection_rate']:.3f}") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(            ) Tj
+(missed) Tj
+( = ) Tj
+(row) Tj
+([) Tj
+0.62 0.20 0.12 rg
+("runs_missed") Tj
+0.00 0.00 0.00 rg
+(]) Tj
+T*
+(  ) Tj
+(            ) Tj
+(misses) Tj
+(.) Tj
+(append) Tj
+(\() Tj
+0.62 0.20 0.12 rg
+("  .") Tj
+0.00 0.00 0.00 rg
+( ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(pd) Tj
+(.) Tj
+(isna) Tj
+(\() Tj
+(missed) Tj
+(\) ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(else) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("{int\(missed\):3d}") Tj
+0.00 0.00 0.00 rg
+(\)) Tj
+T*
+(  ) Tj
+(        ) Tj
+(print) Tj
+(\() Tj
+T*
+(  ) Tj
+(            ) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("{fault:5d}  {cells[0]:>7}  {cells[1]:>8}  {cells[2]:>10}  ") Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 17 of 18) Tj ET
+endstream
+endobj
+39 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 40 0 R >>
+endobj
+40 0 obj
+<< /Length 907 >>
+stream
+BT /F1 8 Tf 42 748 Td 10.2 TL
+(  ) Tj
+(            ) Tj
+(f) Tj
+0.62 0.20 0.12 rg
+("{misses[0]}  {misses[1]}  {misses[2]}") Tj
+T*
+0.00 0.00 0.00 rg
+(  ) Tj
+(        \)) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+T*
+(  ) Tj
+/F2 8 Tf
+0.45 0.15 0.55 rg
+(if) Tj
+/F1 8 Tf
+0.00 0.00 0.00 rg
+( ) Tj
+(__name__) Tj
+( == ) Tj
+0.62 0.20 0.12 rg
+("__main__") Tj
+0.00 0.00 0.00 rg
+(:) Tj
+T*
+(  ) Tj
+(    ) Tj
+(run) Tj
+(\(\)) Tj
+T*
+T*
+/F2 8 Tf
+(Summary line) Tj
+T*
+T*
+/F1 8 Tf
+(  {"team": "banana_bread_matcha_latte", "andrew_ids": ["marktan", "mingyaox", "hsuanlec", "xinranl3"],) Tj
+T*
+(      ) Tj
+("generated": "2026-10-08 15:06 EDT", "auto_score": 10.0, "auto_of": 10, "held_for_ta": 0.0, "total":) Tj
+T*
+(      ) Tj
+(15, "script_sha256": "744445fa94498271372f89d7a8053499fd20999c7754842f770eb7bd5f4a157a"}) Tj
+T*
+ET
+BT /F1 7 Tf 0.40 0.40 0.40 rg 42 40 Td (Miniproject evidence, marktan mingyaox hsuanlec xinranl3   page 18 of 18) Tj ET
+endstream
+endobj
+xref
+0 41
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000233 00000 n 
+0000000301 00000 n 
+0000000374 00000 n 
+0000000510 00000 n 
+0000005443 00000 n 
+0000005579 00000 n 
+0000009776 00000 n 
+0000009913 00000 n 
+0000014925 00000 n 
+0000015063 00000 n 
+0000023505 00000 n 
+0000023643 00000 n 
+0000034516 00000 n 
+0000034654 00000 n 
+0000041884 00000 n 
+0000042022 00000 n 
+0000051613 00000 n 
+0000051751 00000 n 
+0000060899 00000 n 
+0000061037 00000 n 
+0000066734 00000 n 
+0000066872 00000 n 
+0000075206 00000 n 
+0000075344 00000 n 
+0000083210 00000 n 
+0000083348 00000 n 
+0000092307 00000 n 
+0000092445 00000 n 
+0000099741 00000 n 
+0000099879 00000 n 
+0000108340 00000 n 
+0000108478 00000 n 
+0000117340 00000 n 
+0000117478 00000 n 
+0000127643 00000 n 
+0000127781 00000 n 
+0000136195 00000 n 
+0000136333 00000 n 
+trailer
+<< /Size 41 /Root 1 0 R >>
+startxref
+137292
+%%EOF

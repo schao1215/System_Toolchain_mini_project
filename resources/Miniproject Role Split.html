@@ -1,0 +1,350 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Miniproject Role Split</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap">
+<style>
+/* Layout: one reading column; a shared-baseline block, then four role sections with an identical label/value grid, then a timeline table. */
+:root {
+  --bg: #f6f7f6;
+  --surface: #ffffff;
+  --fg: #1c2324;
+  --muted: #5a6668;
+  --line: #d9dfdf;
+  --accent: #0d6b6b;
+  --accent-soft: #e2efee;
+  --warn: #9a5a12;
+  --warn-soft: #f7ecdc;
+  --font-display: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121718; --surface: #192022; --fg: #e3e9e9; --muted: #98a6a8; --line: #2c3638;
+    --accent: #5cc2bd; --accent-soft: #1c3333; --warn: #e3a95c; --warn-soft: #3a2c1a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121718; --surface: #192022; --fg: #e3e9e9; --muted: #98a6a8; --line: #2c3638;
+  --accent: #5cc2bd; --accent-soft: #1c3333; --warn: #e3a95c; --warn-soft: #3a2c1a;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 15px; line-height: 1.55;
+}
+.wrap { max-width: 920px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; display: grid; gap: 40px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; margin: 0; line-height: 1.2; }
+h1 { font-size: 30px; }
+h2 { font-size: 22px; }
+h3 { font-size: 15px; font-family: var(--font-body); font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+code, .mono { font-family: var(--font-mono); font-size: 0.88em; }
+code { background: var(--accent-soft); padding: 1px 5px; border-radius: 3px; white-space: nowrap; }
+ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+li { max-width: 68ch; }
+.eyebrow { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+
+header { display: grid; gap: 14px; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 20px; color: var(--muted); font-size: 14px; }
+.facts b { color: var(--fg); font-weight: 600; }
+
+.status { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.status > div { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.status .open { border-color: var(--warn); background: var(--warn-soft); }
+.status .open h3 { color: var(--warn); }
+
+section { display: grid; gap: 16px; }
+.intro { color: var(--muted); }
+
+.role { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.role-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; padding: 16px 20px; border-bottom: 1px solid var(--line); }
+.role-head .num { font-family: var(--font-mono); color: var(--accent); font-weight: 500; }
+.role-head .sub { color: var(--muted); font-size: 14px; }
+.role.everyone .role-head { background: var(--accent-soft); }
+
+.grid { display: grid; grid-template-columns: 170px 1fr; }
+.grid > dt, .grid > dd { padding: 12px 20px; border-bottom: 1px solid var(--line); margin: 0; min-width: 0; }
+.grid > dt { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 500; padding-top: 14px; }
+.grid > dt:nth-last-of-type(1), .grid > dd:last-child { border-bottom: 0; }
+.grid > dd.task { background: var(--warn-soft); }
+.grid > dt.task { color: var(--warn); background: var(--warn-soft); }
+.where { color: var(--muted); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-family: var(--font-mono); font-size: 12px; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 14px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+tr:last-child td { border-bottom: 0; }
+td:first-child { white-space: nowrap; font-weight: 600; }
+
+footer { color: var(--muted); font-size: 13px; }
+
+@media (max-width: 640px) {
+  .wrap { padding-block: 28px 48px; gap: 32px; }
+  h1 { font-size: 25px; }
+  .grid { grid-template-columns: 1fr; }
+  .grid > dt { border-bottom: 0; padding-bottom: 0; }
+  .grid > dd { padding-top: 4px; }
+}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">06-763 · Tennessee Eastman miniproject</div>
+  <h1>Who covers what before Friday</h1>
+  <p>The code in our repo is finished and follows the recipe. What's left is checking it, explaining it and writing the report. This page splits that into four roles. Each role owns one part of the code, the lecture material behind it, a few report sections and one open task, so every contributions-appendix entry is real.</p>
+  <div class="facts">
+    <span>Due <b>Fri 9 Oct</b></span>
+    <span><b>15 pts</b>, 20% of grade</span>
+    <span><b>No grace days</b></span>
+    <span>Every member must be able to explain their code and the comparison</span>
+  </div>
+</header>
+
+<section>
+  <h2>Where the repo stands</h2>
+  <div class="status">
+    <div>
+      <h3>Done</h3>
+      <ul>
+        <li>Both detectors, thresholds, alarms, the detection and contribution tables, all in <code>results/</code></li>
+        <li>PCA keeps k = 31 components (90.2% of variance)</li>
+        <li>Thresholds: T² 51.80, SPE 11.77, ridge 112.4</li>
+        <li>False-alarm rate on test runs: 0.0005, 0, 0</li>
+        <li>Faults 3, 9, 15 (and 19) missed by all three statistics</li>
+      </ul>
+    </div>
+    <div class="open">
+      <h3>Still open</h3>
+      <ul>
+        <li><b>The evidence script has never been run.</b> That's 10 of the 15 points, unchecked.</li>
+        <li><code>REPORT.pdf</code> is generated from templates by <code>report.py</code> and reads that way. The TA grades it.</li>
+        <li>Figure 1 shows fault 7, where all three statistics sit at 1.00. It shows no difference between detectors.</li>
+        <li>The contributions appendix lists one member.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Everyone, first</h2>
+  <p class="intro">About 1.5 hours. Everyone needs this baseline because the brief says any member can be asked about the comparison.</p>
+
+  <div class="role everyone">
+    <div class="role-head"><h3>Shared baseline</h3><span class="sub">read before your own role</span></div>
+    <dl class="grid">
+      <dt>Repo</dt>
+      <dd><code>README.md</code>, <code>config.py</code> (the splits, channel names and fault list in one place)</dd>
+      <dt>Lectures</dt>
+      <dd>
+        <ul>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l05/notes.html">L5</a>: the Tennessee Eastman section (reactor, condenser, separator, stripper; <code>xmeas</code> vs <code>xmv</code>; 3-minute samples)</li>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l08/notes.html">L8</a>: "Residuals: diagnosis and detection". This is the forecast detector for one channel, plus false alarms and detection delay.</li>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l10/notes.html">L10</a>: "Faults the classifier never saw". It explains why we train on normal data only.</li>
+        </ul>
+      </dd>
+      <dt>Brief</dt>
+      <dd><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/course/miniproject.html">Miniproject page</a>: Overview, "Shared by everyone", and "A one-page primer on PCA monitoring"</dd>
+      <dt>Be able to say</dt>
+      <dd>
+        <ul>
+          <li>Why both detectors see only fault-free data, and what the three fault-free splits (train / validation / test) are each for</li>
+          <li>The alarm rule: a sample and the two before it all above the threshold, never across runs</li>
+          <li>What each statistic reacts to. T²: a big move along a normal direction. SPE: channels stop moving together. Ridge: the last two samples fail to predict this one.</li>
+          <li>Why faults 3, 9 and 15 are missed by everything</li>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+</section>
+
+<section>
+  <h2>The four roles</h2>
+  <p class="intro">The roles follow how the work is graded: the evidence script's <i>Detectors</i> block is roles 1 and 2, and its <i>Evaluation and diagnosis</i> block is roles 3 and 4. They also follow the code's own file boundaries.</p>
+
+  <!-- Role 1 -->
+  <div class="role">
+    <div class="role-head"><span class="num">01</span><h3>PCA monitor</h3><span class="sub">T² and SPE</span></div>
+    <dl class="grid">
+      <dt>Code you own</dt>
+      <dd><code>data.py</code> (checksums, standardization with ddof=1 on runs 1–300), <code>pca_monitor.py</code>, <code>plots.py</code></dd>
+      <dt>Lectures</dt>
+      <dd>
+        <ul>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l08/notes.html">L8</a>: "Ridge, and why scaling matters now". The scaler is fitted on training rows only.</li>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l11/notes.html">L11</a>: "Adam on raw inputs". The same rule, measured.</li>
+          <li><b>PCA itself isn't taught in any lecture.</b> The brief's primer is the core material.</li>
+        </ul>
+      </dd>
+      <dt>Further reading</dt>
+      <dd>
+        <ul>
+          <li>Russell, Chiang &amp; Braatz (2000): the T² and Q (SPE) definitions and control limits</li>
+          <li>De Ketelaere, Hubert &amp; Schmitt: the clearest open derivation of both limits</li>
+          <li>BibMon's TEP tutorial: a worked example on this plant</li>
+          <li>Any short PCA explainer, if eigenvectors are rusty</li>
+        </ul>
+        <span class="where">All but the last are linked under Resources on the brief page.</span>
+      </dd>
+      <dt>Notes</dt>
+      <dd>
+        <ul>
+          <li>The code uses <code>sklearn PCA(svd_solver="full")</code>. The brief says this gives the same model as <code>eigh</code> of the covariance. Eigenvector signs can flip; T² and SPE don't change.</li>
+          <li>k is the first position where the cumulative variance ratio reaches 0.90 (<code>searchsorted</code>).</li>
+          <li>T² divides by each eigenvalue, so a move along a normally quiet direction counts for more.</li>
+          <li>T² is weak on faults 4, 5, 10 and 11. The controllers pull the operating point back inside the normal cloud.</li>
+        </ul>
+      </dd>
+      <dt class="task">Open task</dt>
+      <dd class="task">Replace Figure 1. Plot fault 4 or 5 (where the detectors disagree) instead of fault 7, using <code>plot_fault_run(..., fault=5)</code> or by changing <code>pick_plot_fault</code>.</dd>
+      <dt>Report</dt>
+      <dd>§2 The two detectors (the PCA half and the figure)</dd>
+    </dl>
+  </div>
+
+  <!-- Role 2 -->
+  <div class="role">
+    <div class="role-head"><span class="num">02</span><h3>Forecast-residual monitor</h3><span class="sub">Ridge on lags t−1, t−2</span></div>
+    <dl class="grid">
+      <dt>Code you own</dt>
+      <dd><code>ridge_monitor.py</code> (<code>lag_design</code>, <code>fit_ridge</code>, <code>score_ridge</code>)</dd>
+      <dt>Lectures</dt>
+      <dd>
+        <ul>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l07/notes.html">L7</a>: lag features, ARX, and the run-boundary / group-key rule</li>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l08/notes.html">L8</a>: "Time series as supervised learning", "Model families and multi-step strategies", "Residuals: diagnosis and detection"</li>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l09/notes.html">L9</a>: "Regularization: ridge and lasso", for what alpha does</li>
+        </ul>
+      </dd>
+      <dt>Further reading</dt>
+      <dd>Brief: "Forecast monitor"; L8 is the source the brief points to</dd>
+      <dt>Notes</dt>
+      <dd>
+        <ul>
+          <li>The model is L8's one-channel detector for all 52 channels at once: 104 features, 52 targets, one <code>Ridge(alpha=1.0)</code>.</li>
+          <li>Run numbers 1–20 repeat for every fault, so a lag must stay inside the same (faultNumber, simulationRun) pair. <code>lag_design</code> also checks that sample numbers are consecutive.</li>
+          <li>Each residual is divided by that channel's training residual std, so a channel that is noisy in normal operation doesn't dominate.</li>
+          <li>Samples 1–2 of every run have no score, giving 298,800 scored rows.</li>
+          <li>L8 warned that a one-step residual usually shrinks once the plant settles after a step. Fault 5 doesn't do that here: ridge stays at 0.996. That's the interesting thing to explain.</li>
+        </ul>
+      </dd>
+      <dt class="task">Open task</dt>
+      <dd class="task">Lead §4. Explain why ridge alone catches faults 5, 10, 16 and 20, and why T² drops on 4 and 5. Check the fault-5 claim on more runs than run 1.</dd>
+      <dt>Report</dt>
+      <dd>§2 (the forecast half), §4 Comparison</dd>
+    </dl>
+  </div>
+
+  <!-- Role 3 -->
+  <div class="role">
+    <div class="role-head"><span class="num">03</span><h3>Evaluation and submission</h3><span class="sub">thresholds, alarms, detection table</span></div>
+    <dl class="grid">
+      <dt>Code you own</dt>
+      <dd><code>evaluate.py</code> (<code>validation_threshold</code>, <code>alarm_mask</code>, <code>detection_rows</code>), <code>pipeline.py</code> (the self-checks <code>_check_alarm_rule</code>, <code>_assert_score_rows</code>)</dd>
+      <dt>Lectures</dt>
+      <dd>
+        <ul>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l08/notes.html">L8</a>: "Residuals: diagnosis and detection". A 99th-percentile threshold gave 4.8 false alarms a day; 3 in a row brought that to 0.01 a day, for at least 6 extra minutes of delay.</li>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l08/notes.html">L8</a>: "Evaluating on time", the part on splitting by series</li>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l09/notes.html">L9</a>: "Training, validation and test sets", "Choosing, then testing once"</li>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l10/notes.html">L10</a>: "Measuring a classifier" (confusion matrix, precision/recall, moving the threshold)</li>
+        </ul>
+      </dd>
+      <dt>Further reading</dt>
+      <dd>Brief: "Evaluation (second week)", "Submit", "Grading" (the list of scripted checks)</dd>
+      <dt>Notes</dt>
+      <dd>
+        <ul>
+          <li>Detection rate is recall per fault. The fault-0 row is the false-alarm side.</li>
+          <li>Delay = (first alarm sample − 20) × 3 minutes. Take the median over runs that alarmed, and count runs missed.</li>
+          <li>T² on faults 3, 9 and 15 alarms once (at 231 min) in 1 of 20 runs. Whether that counts as "not detected" is decided by the script, so run it.</li>
+          <li><code>CAUGHT_RATE = 0.10</code> in <code>config.py</code> is our own reporting cut-off, not from the brief. Say so in the report.</li>
+        </ul>
+      </dd>
+      <dt class="task">Open task</dt>
+      <dd class="task">Run the evidence script with all four Andrew IDs, today or tomorrow. Read the PDF, fix any failing check with whoever owns that code, and rerun. Do the final run Thursday and submit both Canvas items Friday.</dd>
+      <dt>Report</dt>
+      <dd>§3 Results (the detection table), §7 Limits</dd>
+    </dl>
+  </div>
+
+  <!-- Role 4 -->
+  <div class="role">
+    <div class="role-head"><span class="num">04</span><h3>Diagnosis</h3><span class="sub">contributions and the fault list</span></div>
+    <dl class="grid">
+      <dt>Code you own</dt>
+      <dd><code>diagnose.py</code>; <code>FAULT_DESCRIPTION</code> and <code>FAULT_EXPECTED_CHANNELS</code> in <code>config.py</code></dd>
+      <dt>Lectures</dt>
+      <dd>
+        <ul>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l05/notes.html">L5</a> and <a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l06/notes.html">L6</a>: the process units and the analysers (<code>xmeas_23</code>–<code>41</code> report late)</li>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l07/notes.html">L7</a>: "Data leakage", the part on analyser delay</li>
+          <li><a href="https://kitchingroup.cheme.cmu.edu/f26-06763/lectures/l10/notes.html">L10</a>: "Logistic regression on one channel". In fault 4 the reactor cooling water valve <code>xmv_10</code> moves from about 41% to 45% open, which matches our fault-4 contributions.</li>
+        </ul>
+      </dd>
+      <dt>Further reading</dt>
+      <dd>
+        <ul>
+          <li>Chiang, Russell &amp; Braatz (2000), Table 1: the fault list</li>
+          <li>Russell, Chiang &amp; Braatz (2000): the study that singles out faults 3, 9 and 15</li>
+          <li>Westerhuis, Gurden &amp; Smilde (2000): why contribution plots smear</li>
+        </ul>
+        <span class="where">All linked under Resources on the brief page.</span>
+      </dd>
+      <dt>Notes</dt>
+      <dd>
+        <ul>
+          <li>A contribution shows where a fault shows up, which is often a controller's response and not the source.</li>
+          <li><code>FAULT_EXPECTED_CHANNELS</code> was written by the coding agent. Check each set against the sources before the report leans on it.</li>
+          <li>The current draft claims "monitoring papers call these three unobservable" and needs a real citation. Fault 19 is also missed by all three, and the brief doesn't mention it.</li>
+          <li>§6 currently uses faults 1, 4 and 6. Fault 4 is the best-supported (see L10).</li>
+        </ul>
+      </dd>
+      <dt class="task">Open task</dt>
+      <dd class="task">Verify the fault table, the expected channels and the 3/9/15 claim against the papers. Write §5 and §6 in your own words, with citations.</dd>
+      <dt>Report</dt>
+      <dd>§5 Faults nobody catches, §6 Diagnosis</dd>
+    </dl>
+  </div>
+
+  <p class="intro">§1 (plant and task) and §8 (AI use) are shared. Whoever finishes first drafts them, and everyone checks §8 is accurate. Each member writes their own appendix entry with their Andrew ID.</p>
+</section>
+
+<section>
+  <h2>Order of work</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Day</th><th>What happens</th><th>Who</th></tr></thead>
+      <tbody>
+        <tr><td>Mon 5</td><td>Agree roles. Collect Andrew IDs. Shared baseline reading.</td><td>All</td></tr>
+        <tr><td>Tue 6</td><td>First evidence-script run; report failures to the team. Own-role reading.</td><td>Role 3 first, then all</td></tr>
+        <tr><td>Wed 7</td><td>Fixes, if any. New Figure 1. Draft own sections from <code>results/</code> numbers. Decide report format: rewrite by hand (a doc or Markdown exported to PDF) or edit <code>report.py</code>.</td><td>All</td></tr>
+        <tr><td>Thu 8</td><td>Assemble the report (4 pages + appendix). Appendix entries. Final evidence run.</td><td>All; role 3 runs the script</td></tr>
+        <tr><td>Fri 9</td><td>Read the evidence PDF, then submit <code>REPORT.pdf</code> and <code>miniproject-evidence.pdf</code> to their two Canvas assignments.</td><td>Role 3</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <div class="chips">
+    <span class="chip">T² 51.80</span><span class="chip">SPE 11.77</span><span class="chip">ridge 112.4</span><span class="chip">k = 31</span><span class="chip">missed: 3 · 9 · 15</span>
+  </div>
+  <p style="margin-top:10px">Lecture section names are the headings in the official course notes. Numbers are from <code>results/</code> as of 30 Sep.</p>
+</footer>
+
+</div>
+
+</body></html>

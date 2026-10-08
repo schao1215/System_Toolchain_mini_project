@@ -26,24 +26,48 @@ from miniproject.config import (
     CHANNEL_DESCRIPTION,
     FAULT_DESCRIPTION,
     ROOT,
+    SAMPLE_MINUTES,
 )
+from miniproject.evaluate import attach_alarms
+
+SAMPLES_PER_DAY = 24 * 60 // SAMPLE_MINUTES
 
 
-# One entry per member. Andrew IDs are not stored in this repository.
-# Replace the placeholder and add the other three members before submitting.
+# One entry per member for the contributions appendix, in role order.
 TEAM = [
     {
-        "name": "Sean",
-        "andrew": "ANDREW_ID",
-        "email": "schao1215@gmail.com",
-        "work": (
-            "Shared preprocessing, PCA monitor, ridge forecast-residual monitor, "
-            "thresholds, alarm rule, detection table, contribution table, figures, "
-            "and this report. The pipeline was drafted with Cursor's coding agent "
-            "and checked against the project recipe."
+        "name": "Lillian",
+        "andrew": "xinranl3",
+        "role": "Part 1, PCA monitor (T2 and SPE)",
+        "code": "data.py (checksums, ddof = 1 standardization), pca_monitor.py, plots.py",
+    },
+    {
+        "name": "Mingyao",
+        "andrew": "mingyaox",
+        "role": "Part 2, forecast-residual monitor (ridge on lags t-1, t-2)",
+        "code": "ridge_monitor.py (lag_design, fit_ridge, score_ridge)",
+    },
+    {
+        "name": "Mark",
+        "andrew": "marktan",
+        "role": "Part 3, evaluation and submission (thresholds, alarms, detection table)",
+        "code": (
+            "evaluate.py (validation_threshold, alarm_mask, detection_rows), the "
+            "self-checks in pipeline.py (_check_alarm_rule, _assert_score_rows); ran the "
+            "course evidence script"
         ),
-    }
+    },
+    {
+        "name": "Sean",
+        "andrew": "hsuanlec",
+        "role": "Part 4, diagnosis (contributions and the fault list)",
+        "code": "diagnose.py; FAULT_DESCRIPTION and FAULT_EXPECTED_CHANNELS in config.py",
+    },
 ]
+
+# Vertical space after a paragraph and before a section heading, in mm.
+PARAGRAPH_GAP = 2.5
+SECTION_GAP = 3.0
 
 
 def _rate(detection: pd.DataFrame, fault: int, detector: str) -> float:
@@ -147,33 +171,44 @@ class Report(FPDF):
 
     def h2(self, text: str) -> None:
         self.set_x(self.l_margin)
-        self.ln(1.0)
+        # Keep a heading with at least three lines of its section.
+        if self.will_page_break(SECTION_GAP + 6 + 3 * 4.0):
+            self.add_page()
+        else:
+            self.ln(SECTION_GAP)
         self.set_font("Helvetica", "B", 11)
         self.multi_cell(0, 5, text)
+        self.ln(1.0)
         self.set_font("Helvetica", size=9)
 
     def body(self, text: str) -> None:
         self.set_x(self.l_margin)
         self.set_font("Helvetica", size=9)
         self.multi_cell(0, 4.0, text)
-        self.ln(0.6)
+        self.ln(PARAGRAPH_GAP)
 
-    def quote(self, text: str) -> None:
-        self.set_x(self.l_margin)
-        self.set_font("Helvetica", "I", 9)
-        self.set_text_color(40, 40, 40)
-        self.multi_cell(0, 4.15, text)
-        self.set_text_color(0, 0, 0)
-        self.ln(0.6)
+
+def _fmt_far(value: float) -> str:
+    """False-alarm rates are small; three decimals would round T2 to 0.001."""
+    return "0" if value == 0 else f"{value:.5f}"
 
 
 def _table(pdf: Report, detection: pd.DataFrame) -> None:
-    """Detection rate and median delay for faults 1 to 20.
+    """False-alarm row, then detection rate and median delay for faults 1 to 20.
 
     Widths are fractions of the frame width. A fixed millimetre sum wider than
     the margins pushes the cursor past the right edge, and the next paragraph
     then has no room to draw a character.
     """
+    pdf.set_x(pdf.l_margin)
+    pdf.set_font("Helvetica", "I", 8)
+    pdf.multi_cell(
+        0,
+        4.0,
+        "Table 1. Detection rate and median delay per fault and statistic. Fault 0 is the "
+        "false-alarm rate on fault-free test runs 401-500.",
+    )
+    pdf.set_x(pdf.l_margin)
     shares = (0.08, 0.12, 0.18, 0.12, 0.18, 0.13, 0.19)
     widths = [share * pdf.epw for share in shares]
     headers = ["Fault", "T2 rate", "T2 delay", "SPE rate", "SPE delay", "Ridge rate", "Ridge delay"]
@@ -183,6 +218,12 @@ def _table(pdf: Report, detection: pd.DataFrame) -> None:
         pdf.cell(width, 4.2, text, border=0, fill=True)
     pdf.ln(4.2)
     pdf.set_font("Helvetica", size=7.5)
+    far_cells = ["0"]
+    for detector in ("T2", "SPE", "ridge"):
+        far_cells += [_fmt_far(_rate(detection, 0, detector)), "-"]
+    for text, width in zip(far_cells, widths):
+        pdf.cell(width, 3.8, text, border=0)
+    pdf.ln(3.8)
     for fault in range(1, 21):
         fill = fault % 2 == 0
         if fill:
@@ -199,7 +240,7 @@ def _table(pdf: Report, detection: pd.DataFrame) -> None:
         for text, width in zip(cells, widths):
             pdf.cell(width, 3.8, text, border=0, fill=fill)
         pdf.ln(3.8)
-    pdf.ln(1)
+    pdf.ln(PARAGRAPH_GAP)
 
 
 def _late_fraction(frame: pd.DataFrame, column: str, threshold: float) -> tuple[float, float]:
@@ -209,6 +250,22 @@ def _late_fraction(frame: pd.DataFrame, column: str, threshold: float) -> tuple[
     early_rate = float((early[column] > threshold).mean()) if len(early) else 0.0
     late_rate = float((late[column] > threshold).mean()) if len(late) else 0.0
     return early_rate, late_rate
+
+
+def _test_crossings(frame: pd.DataFrame, column: str, threshold: float) -> tuple[int, int, int]:
+    """Test-run rows, rows over the line, and rows in alarm under the three-sample rule."""
+    test = frame[(frame["faultNumber"] == 0) & frame["simulationRun"].between(401, 500)]
+    alarmed = attach_alarms(test, column, threshold)
+    return len(test), int((test[column] > threshold).sum()), int(alarmed["alarm"].sum())
+
+
+def _first_alarms(
+    frame: pd.DataFrame, column: str, threshold: float, fault: int
+) -> set[tuple[int, int]]:
+    """(run, first alarmed sample after 20) for every run of one fault that alarmed."""
+    part = attach_alarms(frame[frame["faultNumber"] == fault], column, threshold)
+    hits = part[part["alarm"] & (part["sample"] > 20)]
+    return {(int(run), int(sample)) for run, sample in hits.groupby("simulationRun")["sample"].min().items()}
 
 
 def _describe(faults: list[int]) -> str:
@@ -244,6 +301,32 @@ def write_report(
     ]
     far = {name: _rate(detection, 0, name) for name in ("T2", "SPE", "ridge")}
 
+    # Section 3 and 7: how the three-sample rule changes the test-run counts.
+    score_frames = {"T2": (pca_scores, "T2"), "SPE": (pca_scores, "SPE"), "ridge": (ridge_scores, "score")}
+    crossings = {
+        name: _test_crossings(frame, column, float(threshold_map[name]))
+        for name, (frame, column) in score_frames.items()
+    }
+    clear_all = [
+        fault for fault in range(1, 21)
+        if all(_rate(detection, fault, name) >= 0.50 for name in ("T2", "SPE", "ridge"))
+    ]
+    ridge_best = sum(
+        _rate(detection, fault, "ridge") >= max(_rate(detection, fault, "T2"), _rate(detection, fault, "SPE"))
+        for fault in range(1, 21)
+    )
+    fastest = float(detection.loc[detection["fault"] > 0, "median_delay_min"].min())
+    fault16_t2_delay = float(
+        detection.loc[(detection["fault"] == 16) & (detection["detector"] == "T2"), "median_delay_min"].iloc[0]
+    )
+    fault19_max = max(_rate(detection, 19, name) for name in ("T2", "SPE", "ridge"))
+    t2_hidden = {
+        fault: _first_alarms(pca_scores, "T2", float(threshold_map["T2"]), fault) for fault in (3, 9, 15)
+    }
+    shared_spike = (
+        len(t2_hidden[3]) == 1 and t2_hidden[3] == t2_hidden[9] == t2_hidden[15]
+    )
+
     plot_run = pca_scores[
         (pca_scores["faultNumber"] == plot_fault) & (pca_scores["simulationRun"] == 1)
     ]
@@ -278,201 +361,216 @@ def write_report(
     pdf.multi_cell(
         0,
         4.15,
-        "Miniproject. PCA retained "
-        f"k = {k} components ({variance:.1%} of the training variance). "
-        "Thresholds are the empirical 99th percentile of validation runs 301-400.",
+        "06-763 miniproject, team banana_bread_matcha_latte. PCA keeps "
+        f"k = {k} components ({variance:.1%} of the training variance). Thresholds are "
+        "the 99th percentile of validation runs 301-400.",
     )
-    pdf.ln(1)
+    pdf.ln(PARAGRAPH_GAP)
 
     pdf.h2("1. The plant and the task")
     pdf.body(
-        "The Tennessee Eastman Process is a simulated chemical plant. Gaseous reactants "
-        "enter an exothermic reactor, the product is condensed and recycled, and a stripper "
-        "sends the liquid product downstream. Fifty-two signals are recorded every three "
-        "minutes: forty-one measurements and eleven valve positions. A run is 500 samples, "
-        "which is 25 hours. In a faulty run the disturbance starts at one hour, so samples "
-        "1 to 20 are still normal and samples 21 to 500 are not."
+        "The Tennessee Eastman Process is a simulated chemical plant with a reactor, "
+        "condenser, vapour-liquid separator, recycle compressor and product stripper. "
+        "Fifty-two signals are recorded every 3 minutes: 41 measurements (xmeas_1 to "
+        "xmeas_41) and 11 manipulated variables (xmv_1 to xmv_11). A run is 500 samples, "
+        "or 25 hours. In a faulty run the fault starts after sample 20, so samples 1-20 "
+        "are normal and samples 21-500 are faulty."
     )
     pdf.body(
-        "Faults are uncommon, and the next one is often a kind nobody has labelled. A "
-        "classifier trained on old fault examples cannot see that new kind. Process "
-        "monitoring therefore learns what normal operation looks like, and raises an alarm "
-        "when a new sample stops looking normal. This project builds two such detectors. "
-        "Both are trained only on fault-free runs 1 to 300. Thresholds use runs 301 to 400. "
-        "False alarms use runs 401 to 500. The same twenty faults are then scored. No faulty "
-        "row is used to fit a model or to choose a threshold."
+        "The task is to detect 20 fault types with models trained on normal operation "
+        "only, because a classifier trained on labelled faults cannot recognise a fault "
+        "type it has not seen. We build two detectors: a PCA monitor (T2 and SPE) and a "
+        "ridge forecast-residual monitor. Both are fitted on fault-free runs 1-300. "
+        "Thresholds are set on fault-free runs 301-400 and false alarms are measured on "
+        "fault-free runs 401-500. Faults 1-20, 20 runs each, are scored afterwards. No "
+        "faulty sample is used to fit a model or set a threshold."
     )
 
     pdf.h2("2. The two detectors")
     pdf.body(
-        f"The PCA monitor standardizes each channel by the training mean and the training "
-        f"standard deviation, using divisor n - 1, then keeps the smallest set of principal "
-        f"components whose eigenvalues sum to at least 90 percent of the total. That cutoff "
-        f"is k = {k} ({variance:.1%}). For a standardized row z and loadings P, the score "
-        "vector is t = P transpose z. T2 sums t_i squared over lambda_i for the retained "
-        "components. It is large when the plant still moves along its usual directions, but "
-        "by an unusual amount. SPE is the squared length of the residual z - P P transpose z. "
-        "It is large when the channels stop moving together, so the retained components "
-        "cannot reconstruct the row."
-    )
-    pdf.quote(
-        'Project primer: "T2 is the squared distance from the centre in that subspace, '
-        'with each direction scaled by its own variance." "A large SPE means the channels '
-        'have stopped moving together the way they normally do."'
+        "PCA monitor. Each channel is standardized with the training mean and standard "
+        "deviation (ddof = 1). PCA keeps the smallest number of components whose "
+        f"eigenvalues sum to at least 90% of the total: k = {k} ({variance:.1%}). With "
+        "loadings P and scores t = P'z, T2 is the sum of t_i^2 / lambda_i over the retained "
+        "components. It is large when a sample moves an unusual distance along the normal "
+        "directions of variation. SPE is the squared reconstruction error |z - PP'z|^2. "
+        "It is large when the channels stop following their normal correlations."
     )
     pdf.body(
-        "The forecast monitor is the Lecture 8 residual detector applied to all 52 channels. "
-        "Inside each run the features are the standardized rows at t-1 and at t-2, 104 "
-        "columns, and the target is the standardized row at t. One ridge regression with "
-        "alpha = 1 is fit on the training runs and predicts all 52 channels at once. Each "
-        "residual is divided by that channel's training residual standard deviation, again "
-        "with divisor n - 1, then squared and summed. The first two samples of a run have "
-        "no score, because t-2 does not exist, and a lag never crosses a run boundary. "
-        "This score is large when the recent past does not predict the present. That is a "
-        "different question from asking whether the operating point is far from the normal cloud."
+        "Forecast monitor. This is the Lecture 8 one-step residual detector applied to all "
+        "52 channels. The features are the standardized samples at t-1 and t-2 (104 "
+        "columns) and the target is the sample at t. Lags never cross a run boundary, so "
+        "samples 1 and 2 of each run have no score. One Ridge(alpha = 1) is fitted on the "
+        "training runs to predict all 52 channels. Each residual is divided by that "
+        "channel's training residual standard deviation (ddof = 1), and the score is the "
+        "sum of squares. It is large when the last two samples do not predict the current one."
     )
     pdf.body(
-        "Each threshold is numpy.quantile of the validation scores at probability 0.99, "
-        "with NumPy's default interpolation. "
-        f"T2 is {float(threshold_map['T2']):.4g}, SPE is {float(threshold_map['SPE']):.4g}, "
-        f"and the ridge score is {float(threshold_map['ridge']):.4g}. A sample is in alarm "
-        "only when it and the two samples before it all exceed that line. "
-        f"Figure 1 is fault {plot_fault}, run 1 ({FAULT_DESCRIPTION[plot_fault]}). "
-        "On that run, the share of samples above the line in samples 21-40, then in "
-        f"samples 200-500, is T2 {t2_early:.2f} then {t2_late:.2f}, "
-        f"SPE {spe_early:.2f} then {spe_late:.2f}, "
-        f"and ridge {ridge_early:.2f} then {ridge_late:.2f}. "
-        "The dashed line is the last normal sample. The horizontal line is the "
-        "validation 99th percentile of that statistic."
+        "Thresholds and alarms. Each threshold is numpy.quantile of the validation scores "
+        f"at 0.99 with the default interpolation: T2 {float(threshold_map['T2']):.4g}, "
+        f"SPE {float(threshold_map['SPE']):.4g}, ridge {float(threshold_map['ridge']):.4g}. "
+        "A sample is in alarm when it and the two preceding samples of the same run all "
+        f"exceed the threshold. Figure 1 shows fault {plot_fault}, run 1 "
+        f"({FAULT_DESCRIPTION[plot_fault]}). The share of samples above the threshold in "
+        f"samples 21-40, then 200-500, is T2 {t2_early:.2f} then {t2_late:.2f}, SPE "
+        f"{spe_early:.2f} then {spe_late:.2f}, and ridge {ridge_early:.2f} then "
+        f"{ridge_late:.2f}. The dashed line marks sample 20 and the horizontal line is "
+        "the threshold."
     )
 
     pdf.set_x(pdf.l_margin)
     pdf.image(str(figure), w=168)
-    pdf.ln(1)
+    pdf.ln(PARAGRAPH_GAP)
 
     pdf.h2("3. Results")
     pdf.body(
-        "The false-alarm rate is the share of samples in alarm on fault-free test runs "
-        f"401 to 500. T2 {far['T2']:.4f}, SPE {far['SPE']:.4f}, ridge {far['ridge']:.4f}. "
-        "The detection rate, for each faulty run, is the share of samples after sample 20 "
-        "that are in alarm, averaged over the 20 runs. Delay is the median, over the runs "
-        "that did alarm, of the minutes from sample 20 to the first later alarm. Samples "
-        "are 3 minutes apart, so an alarm at sample 21 is a delay of 3 minutes. The cell "
-        '"none" means every run was missed. A count after the delay is how many of the '
-        "20 runs never alarmed."
+        "Table 1 gives the detection rate and median delay for each fault and statistic. "
+        "The detection rate is the share of samples after sample 20 in alarm, averaged "
+        "over the 20 runs. The delay is the median, over runs that alarmed, of the minutes "
+        'from sample 20 to the first alarm. "none" means all 20 runs were missed, and "N '
+        'missed" counts runs with no alarm. Fault 0 is the false-alarm rate, the share of '
+        "samples in alarm on test runs 401-500."
     )
     _table(pdf, detection)
+    pdf.body(
+        f"False alarms. On the test runs, T2 exceeds its threshold on {crossings['T2'][1]} "
+        f"of {crossings['T2'][0]:,} samples, SPE on {crossings['SPE'][1]} of "
+        f"{crossings['SPE'][0]:,} and ridge on {crossings['ridge'][1]} of "
+        f"{crossings['ridge'][0]:,}, close to the 1% a 99th percentile implies. After the "
+        f"three-sample rule, {crossings['T2'][2]}, {crossings['SPE'][2]} and "
+        f"{crossings['ridge'][2]} samples are in alarm. SPE and ridge exceedances are "
+        "isolated. T2 exceedances cluster, because slow normal variation lies inside the "
+        "PCA subspace and keeps T2 high for several samples."
+    )
+    pdf.body(
+        "Detection. All three statistics reach a rate of 0.50 or more on faults "
+        f"{', '.join(str(fault) for fault in clear_all)}, and all three stay below "
+        f"{CAUGHT_RATE:.2f} on faults {', '.join(str(fault) for fault in missed_all)}. "
+        f"Ridge has the highest rate, or ties for it, on {ridge_best} of 20 faults. The "
+        f"shortest median delay is {fastest:.0f} minutes, because the first three-sample "
+        "window entirely after the fault ends at sample 23. An earlier alarm needs a "
+        "pre-fault sample above the threshold."
+    )
+    hidden_text = ""
+    if shared_spike:
+        run, sample = next(iter(t2_hidden[3]))
+        hidden_text = (
+            f" T2's only alarms on faults 3, 9 and 15 start in run {run} at sample {sample}, "
+            "in all three faults. The three T2 traces are nearly identical around that "
+            "sample, which suggests that runs with the same number share their background "
+            "noise. The alarm is a normal excursion, not a detection."
+        )
+    pdf.body(
+        "A delay means at least one run alarmed, not that the fault was detected. T2 on "
+        f"fault 16 has a median delay of {fault16_t2_delay:.0f} minutes at a rate of "
+        f"{_rate(detection, 16, 'T2'):.3f}, and fault 19 has delays on all three "
+        f"statistics at rates of {fault19_max:.3f} or less." + hidden_text
+    )
 
     pdf.h2("4. Comparison")
+    ridge_only = [
+        fault for fault in range(1, 21)
+        if _rate(detection, fault, "ridge") >= 0.50 and _rate(detection, fault, "SPE") < 0.50
+    ]
     pdf.body(
-        "T2 is large inside the normal subspace, and a quiet direction counts more because "
-        "its eigenvalue is in the denominator. SPE is large when channels stop moving "
-        "together. The ridge score is large when the last two samples fail to predict the "
-        "present. A rate of at least 0.50 is a clear catch; a rate below "
-        f"{CAUGHT_RATE:.2f} is a miss. On that 0.50 line, every fault SPE catches, ridge "
-        f"catches too. Ridge also clearly catches {_describe([fault for fault in range(1, 21) if _rate(detection, fault, 'ridge') >= 0.50 and _rate(detection, fault, 'SPE') < 0.50])}. "
-        f"SPE clearly catches fault 4 and T2 does not: T2 {_rate(detection, 4, 'T2'):.3f}, "
-        f"SPE {_rate(detection, 4, 'SPE'):.3f}, ridge {_rate(detection, 4, 'ridge'):.3f}. "
-        f"No fault is clearly caught by T2 and missed by SPE. "
-        f"The faults below {CAUGHT_RATE:.2f} on every statistic are {_describe(missed_all)}."
+        "T2 responds to large moves along normal directions, SPE to broken correlations "
+        "between channels, and ridge to samples that the previous two do not predict. "
+        f"Taking 0.50 as a clear catch and {CAUGHT_RATE:.2f} as a miss, ridge clearly "
+        "catches every fault that SPE clearly catches, and also catches "
+        f"{_describe(ridge_only)}, which SPE does not. SPE clearly catches fault 4 and T2 "
+        f"does not (T2 {_rate(detection, 4, 'T2'):.3f}, SPE {_rate(detection, 4, 'SPE'):.3f}, "
+        f"ridge {_rate(detection, 4, 'ridge'):.3f}). No fault is clearly caught by T2 and "
+        "missed by SPE."
     )
     pdf.body(
         "Fault 4 is a step in reactor cooling-water inlet temperature. On run 1, the share "
-        "of samples above the line in samples 21-40, then in samples 200-500, is "
+        "of samples above the threshold in samples 21-40, then 200-500, is "
         f"T2 {fault4['T2'][0]:.2f} then {fault4['T2'][1]:.2f}, "
-        f"SPE {fault4['SPE'][0]:.2f} then {fault4['SPE'][1]:.2f}, "
-        f"ridge {fault4['ridge'][0]:.2f} then {fault4['ridge'][1]:.2f}. "
-        "The temperature loop moves the cooling-water valve and pulls the measurements "
-        "back toward the normal cloud, so T2 does not stay in alarm (rate "
-        f"{_rate(detection, 4, 'T2'):.3f}, though every run does alarm at least once). "
-        "SPE stays large because that valve and the reactor temperature are no longer on "
-        "their normal relationship. The forecast was trained on the normal relationship, "
-        "so its residual stays large as well."
+        f"SPE {fault4['SPE'][0]:.2f} then {fault4['SPE'][1]:.2f}, and "
+        f"ridge {fault4['ridge'][0]:.2f} then {fault4['ridge'][1]:.2f}. The temperature "
+        "controller moves the reactor cooling-water valve and returns the measurements "
+        f"toward the normal region, so T2 alarms only briefly (rate "
+        f"{_rate(detection, 4, 'T2'):.3f}, although every run alarms at least once). The "
+        "valve and the reactor temperature no longer follow their normal relationship, so "
+        "SPE and the ridge residual stay high."
     )
     pdf.body(
-        "Fault 5 is a step in condenser cooling-water inlet temperature, and it is the "
-        "case where the detectors disagree. Just after the fault on run 1, all three are "
-        f"over the line (T2 {fault5['T2'][0]:.2f}, SPE {fault5['SPE'][0]:.2f}, "
-        f"ridge {fault5['ridge'][0]:.2f}). Late in that run T2 is {fault5['T2'][1]:.2f} "
-        f"and SPE is {fault5['SPE'][1]:.2f}, while ridge is still {fault5['ridge'][1]:.2f}. "
-        "The controllers bring the static operating point back inside both PCA limits. "
-        "The one-step forecast does not recover. Averaged over the 20 runs the rates are "
-        f"T2 {_rate(detection, 5, 'T2'):.3f}, SPE {_rate(detection, 5, 'SPE'):.3f}, "
-        f"ridge {_rate(detection, 5, 'ridge'):.3f}. "
-        f"Fault {plot_fault} in Figure 1 is the opposite pattern: the disturbance is not "
-        f"absorbed, and the late shares stay high "
-        f"(T2 {t2_late:.2f}, SPE {spe_late:.2f}, ridge {ridge_late:.2f})."
+        "Fault 5 is a step in condenser cooling-water inlet temperature, and the detectors "
+        "disagree most here. On run 1 all three exceed the threshold just after the fault "
+        f"(T2 {fault5['T2'][0]:.2f}, SPE {fault5['SPE'][0]:.2f}, ridge {fault5['ridge'][0]:.2f}). "
+        f"Late in the run T2 is at {fault5['T2'][1]:.2f} and SPE at {fault5['SPE'][1]:.2f}, "
+        f"while ridge stays at {fault5['ridge'][1]:.2f}. The controllers return the "
+        "operating point inside both PCA limits, but the one-step forecast stays wrong. "
+        f"Over the 20 runs the rates are T2 {_rate(detection, 5, 'T2'):.3f}, "
+        f"SPE {_rate(detection, 5, 'SPE'):.3f} and ridge {_rate(detection, 5, 'ridge'):.3f}. "
+        f"Fault {plot_fault} in Figure 1 is the opposite case: the disturbance is not "
+        f"absorbed and the late shares stay high (T2 {t2_late:.2f}, SPE {spe_late:.2f}, "
+        f"ridge {ridge_late:.2f})."
     )
 
     pdf.h2("5. Faults nobody catches")
-    missed_text = _describe(missed_all) if missed_all else (
-        "no fault sits below the 0.10 line on all three statistics"
+    missed_text = _describe(missed_all) if missed_all else "none"
+
+    def _triple(fault: int, value) -> str:
+        return " / ".join(str(value(detection, fault, name)) for name in ("T2", "SPE", "ridge"))
+
+    def _rates(fault: int) -> str:
+        return " / ".join(f"{_rate(detection, fault, name):.3f}" for name in ("T2", "SPE", "ridge"))
+
+    spike_note = (
+        " The single T2 alarm on each is the run-7 excursion described in Section 3."
+        if shared_spike else ""
     )
     pdf.body(
-        f"Faults missed by all three statistics, under that same 0.10 line: {missed_text}. "
-        "The project check, and the Tennessee Eastman studies it points to, single out "
-        "faults 3, 9, and 15. Fault 3 is a step in D-feed temperature, fault 9 is random "
-        "variation of that same temperature, and fault 15 is a sticking condenser "
-        "cooling-water valve. Monitoring papers call these three unobservable: on the 52 "
-        "recorded channels they look like normal operation. The temperature disturbance "
-        "barely appears in the measurements, and the level and temperature loops can "
-        "absorb the sticking valve. Our rates are "
-        f"fault 3: T2 {_rate(detection, 3, 'T2'):.3f}, SPE {_rate(detection, 3, 'SPE'):.3f}, "
-        f"ridge {_rate(detection, 3, 'ridge'):.3f}; "
-        f"fault 9: T2 {_rate(detection, 9, 'T2'):.3f}, SPE {_rate(detection, 9, 'SPE'):.3f}, "
-        f"ridge {_rate(detection, 9, 'ridge'):.3f}; "
-        f"fault 15: T2 {_rate(detection, 15, 'T2'):.3f}, SPE {_rate(detection, 15, 'SPE'):.3f}, "
-        f"ridge {_rate(detection, 15, 'ridge'):.3f}. "
-        "Runs missed, written as T2 / SPE / ridge, are "
-        f"fault 3: {_missed(detection, 3, 'T2')}/{_missed(detection, 3, 'SPE')}/{_missed(detection, 3, 'ridge')}, "
-        f"fault 9: {_missed(detection, 9, 'T2')}/{_missed(detection, 9, 'SPE')}/{_missed(detection, 9, 'ridge')}, "
-        f"fault 15: {_missed(detection, 15, 'T2')}/{_missed(detection, 15, 'SPE')}/{_missed(detection, 15, 'ridge')}."
+        f"All three statistics stay below {CAUGHT_RATE:.2f} on {missed_text}. Faults 3, 9 "
+        "and 15 are the faults the project brief and Russell, Chiang and Braatz (2000) "
+        "single out as hard to detect. Fault 3 is a step in D-feed temperature, fault 9 is "
+        "random variation in the same temperature, and fault 15 is a sticking condenser "
+        "cooling-water valve. Rates (T2 / SPE / ridge) are "
+        f"{_rates(3)} for fault 3, {_rates(9)} for fault 9 and {_rates(15)} for fault 15. "
+        f"Runs missed are {_triple(3, _missed)}, {_triple(9, _missed)} and "
+        f"{_triple(15, _missed)}." + spike_note
     )
     pdf.body(
-        "That says something about these sensors and this controller, not that the plant "
-        "is healthy. A disturbance can be real and still be invisible when it is rejected "
-        "before it reaches a recorded channel, or when it only rearranges the plant inside "
-        "the variation already present in the 300 normal runs."
+        "These faults either change the recorded channels too little or are cancelled by "
+        "the control loops before they reach them, so the samples stay within the "
+        "variation of the 300 normal training runs. Missing them reflects the sensors and "
+        "the controllers, not a healthy plant. Fault 19 is different. Its rates are low, "
+        f"but runs missed are only {_triple(19, _missed)}, so it is weak rather than "
+        "invisible."
     )
 
     pdf.h2("6. Diagnosis")
     pdf.body(
-        "SPE and the ridge score are sums of squares, so each splits into one term per "
-        "channel. For each fault those terms are averaged over every sample that is in "
-        "alarm after sample 20, across the 20 runs, and the top five channels are kept. "
-        "The average shows where the fault appears. Westerhuis, Gurden and Smilde (2000) "
-        "show that contribution plots smear: a channel correlated with the disturbed one "
-        "inherits part of the score, so the largest term is not always the place the "
-        "fault started."
+        "SPE and the ridge score are sums of squared terms, one per channel. For each "
+        "fault, those terms are averaged over every sample in alarm after sample 20 across "
+        "the 20 runs, and the five largest are kept. A contribution shows where a fault "
+        "appears, not necessarily where it starts: Westerhuis, Gurden and Smilde (2000) "
+        "show that contributions smear onto correlated channels."
     )
     notes = {
         1: (
-            "The fault is an A/C feed-ratio step in stream 4. SPE's two largest terms "
-            "are the stream-4 flow and its valve, which is where the fault is introduced. "
-            "Ridge instead puts almost all of its score on the A feed and the A-feed valve: "
-            "the ratio change shows up there as a correction. Product composition E and the "
-            "reactor cooling-water outlet temperature in the SPE list are downstream of that "
-            "feed change. The detectors agree that a feed moved, and they disagree which leg is loudest."
+            "SPE ranks the stream-4 flow and its valve highest, where the fault enters. "
+            "Ridge ranks the A feed and its valve highest, where the controllers correct "
+            "the ratio. Product composition E and the reactor cooling-water outlet "
+            "temperature are downstream effects."
         ),
         4: (
-            "The inlet temperature itself is not one of the 52 channels. Both detectors "
-            "rank the reactor cooling-water valve first and the reactor temperature second, "
-            "which is the loop that answers the disturbance. The other SPE terms are much "
-            "smaller, so this ranking is not smeared across the plant."
+            "The inlet temperature is not measured. Both detectors rank the reactor "
+            "cooling-water valve first and the reactor temperature second, which is the "
+            "loop that responds to the disturbance. The remaining SPE terms are small, so "
+            "the ranking is not smeared."
         ),
         6: (
-            "Ridge ranks the A feed and its valve first, which is the stream that was lost. "
-            "SPE's largest term is the compressor recycle valve, then reactor cooling and "
-            "compressor work; the A feed itself is only fifth. The plot is showing the "
-            "plant-wide correction, not only the stream that failed. That is the smearing "
-            "Westerhuis, Gurden and Smilde describe, and it is also a real material balance: "
-            "losing the A feed forces the recycle and the reactor heat balance to move."
+            "Ridge ranks the A feed and its valve first, the stream that was lost. SPE "
+            "ranks the compressor recycle valve first, then reactor cooling and compressor "
+            "work, with the A feed fifth. SPE shows the plant-wide correction: losing the "
+            "A feed changes the recycle flow and the reactor heat balance, which matches "
+            "the smearing described by Westerhuis, Gurden and Smilde."
         ),
     }
     if not diagnosis_faults:
-        pdf.body(
-            "No fault produced an alarming sample after sample 20, so there is no ranking."
-        )
+        pdf.body("No fault has an alarmed sample after sample 20, so there is no ranking.")
     for fault in diagnosis_faults:
         spe_channels = _top_channels(contributions, fault, "SPE")
         ridge_channels = _top_channels(contributions, fault, "ridge")
@@ -482,44 +580,67 @@ def write_report(
             f"Ridge top five: {_names(ridge_channels)}. "
             + notes.get(
                 fault,
-                "Channels on the disturbed equipment support the fault description; "
-                "the others are where the plant moved after the controllers reacted.",
+                "Channels on the disturbed equipment support the fault description. The "
+                "others show where the plant moved after the controllers reacted.",
             )
         )
 
     pdf.h2("7. Limits")
+    raw_per_day = {
+        name: SAMPLES_PER_DAY * crossings[name][1] / crossings[name][0] for name in crossings
+    }
+    alarm_per_day = {
+        name: SAMPLES_PER_DAY * crossings[name][2] / crossings[name][0] for name in crossings
+    }
     pdf.body(
-        "The threshold is an empirical percentile of held-out normal runs, not the "
-        "textbook F limit for T2 or the Jackson-Mudholkar approximation for SPE. Those "
-        "limits assume independent normal samples. Samples taken three minutes apart are "
-        "neither, which is why the recipe uses one percentile for all three statistics. "
-        "The number means that about one percent of normal validation rows sit above the "
-        "line. The three-in-a-row rule then makes the test-set false-alarm rate smaller, "
-        "which is what the fault-0 row reports."
+        "Cut-offs. The 0.10 line for a catch and the 0.50 line for a clear catch are our "
+        "own choices, not the project's, and they decide which faults Sections 4 and 5 "
+        f"call missed. Fault 19, at {fault19_max:.3f} or less on every statistic, would "
+        "change category with a lower line. The thresholds are empirical percentiles, not "
+        "the textbook F and Jackson-Mudholkar limits, which assume independent normal samples."
     )
     pdf.body(
-        "This setup cannot say what a real plant would do. The records are one simulated "
-        "operating mode with scripted faults. They do not include a slow drift of the "
-        "normal regime, a sensor that fails stuck, or a fault that arrives during a "
-        "setpoint change. Contribution ranks are not root causes. The ridge model is "
-        "linear and looks back only two samples, so a slow oscillation can look "
-        "predictable. A fault absorbed by the controllers stays invisible to both "
-        "detectors, however the threshold is set."
+        f"Alarm rule. At {SAMPLES_PER_DAY} samples a day, raw exceedances on the test runs "
+        f"occur about {raw_per_day['T2']:.1f}, {raw_per_day['SPE']:.1f} and "
+        f"{raw_per_day['ridge']:.1f} times a day for T2, SPE and ridge, close to the 4.8 a "
+        "day reported in Lecture 8 for a 99th-percentile threshold. The three-sample rule "
+        f"cuts alarmed samples to {alarm_per_day['T2']:.2f}, {alarm_per_day['SPE']:.2f} "
+        f"and {alarm_per_day['ridge']:.2f} a day, at the cost of at least "
+        f"{2 * SAMPLE_MINUTES} extra minutes before any alarm. A real plant would choose "
+        "this rule by weighing the cost of a false alarm against the cost of a late one."
+    )
+    pdf.body(
+        f"Sample size. Zero alarmed samples out of {crossings['SPE'][0]:,} in 100 test runs "
+        "shows the false-alarm rate is small, not zero, and correlated neighbouring samples "
+        "make the evidence weaker than the count suggests. Each fault has only 20 runs, and "
+        "runs with the same number appear to share background noise across faults, so "
+        "differences between faults rest on fewer independent draws than the table "
+        "suggests. Every metric also assumes a known fault start after sample 20. A real "
+        "plant does not know when a fault began, and operators care about alarm events and "
+        "time to first alarm more than the share of samples in alarm."
+    )
+    pdf.body(
+        "Scope. The data are one simulated operating mode with scripted faults. They "
+        "contain no drift in normal operation, no failed sensors and no faults during "
+        "setpoint changes. Contribution ranks are not root causes. The ridge model is "
+        "linear with two lags, so a slow oscillation can look predictable. A fault that "
+        "the controllers fully absorb is invisible to all three statistics, whatever the "
+        "threshold."
     )
 
     pdf.h2("8. AI use")
     pdf.body(
-        "The pipeline and this report were drafted with Cursor's coding agent (Grok). "
-        "The draft was required to follow the project recipe: training runs 1-300, "
-        "validation runs 301-400 for thresholds only, test runs 401-500 for false alarms, "
-        "standardization with divisor n - 1, a 90 percent PCA cutoff, Ridge with alpha 1 "
-        "on lags t-1 and t-2, numpy.quantile at 0.99, the three-sample alarm rule, and "
-        "the top five contributions on alarming samples after sample 20. The course "
-        "evidence script was not run. The formulas and the filters were checked in the "
-        "code against that recipe, and the table in section 3 is computed from the score "
-        "files rather than typed in. The PDF was not edited by hand after it was written. "
-        "Each author still has to be able to explain the code they are responsible for "
-        "and the comparison in section 4."
+        "Cursor's coding agent (Grok) drafted the pipeline and the first version of this "
+        "report, constrained to follow the project recipe: runs 1-300 for fitting, "
+        "301-400 for thresholds and 401-500 for false alarms, ddof = 1 standardization, "
+        "a 90% PCA cutoff, Ridge(alpha = 1) on lags t-1 and t-2, 99th-percentile "
+        "thresholds, the three-sample alarm rule and top-five contributions. Claude Code "
+        "(Anthropic) was used to review the evaluation code and to revise the text of "
+        "this report. Every number in the report is computed from the score files, not "
+        "typed in, and the PDF was not edited by hand. The team checked the code against "
+        "the recipe. The course evidence script, run on 8 October 2026, passed all "
+        "automatic checks (10/10). Each member is responsible for explaining the code "
+        "they own and the comparison in Section 4."
     )
 
     # The appendix is outside the four-page body. Start a new page so the
@@ -527,17 +648,12 @@ def write_report(
     print(f"body_pages={pdf.page_no()}")
     pdf.add_page()
     pdf.h2("Appendix: contributions")
-    pdf.body(
-        "This appendix does not count toward the four-page limit. One entry per member."
-    )
+    pdf.body("This appendix does not count toward the four-page limit. One entry per member.")
     for person in TEAM:
         pdf.body(
-            f"{person['name']} ({person['andrew']}, {person['email']}). {person['work']}"
+            f"{person['name']} ({person['andrew']}). {person['role']}. "
+            f"Code: {person['code']}."
         )
-    pdf.body(
-        "The team has four members. Add the other three Andrew IDs, and what each person "
-        "built, before this file is submitted. The evidence script does not read this page."
-    )
 
     pdf.output(str(out))
     print(f"report  {out.name}  pages={pdf.pages_count}")
