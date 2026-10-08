@@ -1,5 +1,7 @@
-# Virtual environment and Python caches
-.venv/
+# Virtual environment and Python caches. On iCloud-synced folders the
+# environment lives in .venv.nosync (iCloud skips it) and .venv is a link to it.
+.venv
+.venv.nosync/
 __pycache__/
 *.pyc
 *.egg-info/

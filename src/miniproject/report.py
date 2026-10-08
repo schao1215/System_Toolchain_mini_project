@@ -36,13 +36,13 @@ SAMPLES_PER_DAY = 24 * 60 // SAMPLE_MINUTES
 # One entry per member for the contributions appendix, in role order.
 TEAM = [
     {
-        "name": "Lillian",
+        "name": "Xinran Li",
         "andrew": "xinranl3",
         "role": "Part 1, PCA monitor (T2 and SPE)",
         "code": "data.py (checksums, ddof = 1 standardization), pca_monitor.py, plots.py",
     },
     {
-        "name": "Mingyao",
+        "name": "Mingyao Xu",
         "andrew": "mingyaox",
         "role": "Part 2, forecast-residual monitor (ridge on lags t-1, t-2)",
         "code": "ridge_monitor.py (lag_design, fit_ridge, score_ridge)",
@@ -58,7 +58,7 @@ TEAM = [
         ),
     },
     {
-        "name": "Sean",
+        "name": "Sean Chao",
         "andrew": "hsuanlec",
         "role": "Part 4, diagnosis (contributions and the fault list)",
         "code": "diagnose.py; FAULT_DESCRIPTION and FAULT_EXPECTED_CHANNELS in config.py",
