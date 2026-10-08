@@ -1,5 +1,21 @@
+# Virtual environment and Python caches
 .venv/
 __pycache__/
 *.pyc
-.DS_Store
 *.egg-info/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Local copies of submission files. The originals at the root are tracked.
+submission/
+reports/
+* copy.pdf
